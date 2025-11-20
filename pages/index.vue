@@ -1,0 +1,87 @@
+<template>
+  <div>
+    <!-- Hero Section -->
+    <HeroSection />
+
+    <!-- Trust Stats Bar -->
+    <TrustStats />
+
+    <!-- We Understand Your Fears -->
+    <FearsSection />
+
+    <!-- Programs Overview -->
+    <ProgramsOverview />
+
+    <!-- Your Country Gateway -->
+    <CountriesSection />
+
+    <!-- Why Study in China -->
+    <WhyChinaSection />
+
+    <!-- Success Stories Showcase -->
+    <SuccessStoriesShowcase />
+
+    <!-- Services Overview -->
+    <ServicesOverview />
+
+    <!-- Scholarships Teaser -->
+    <ScholarshipsTeaser />
+
+    <!-- Blog Preview -->
+    <BlogPreview />
+
+    <!-- Final CTA -->
+    <FinalCTA />
+  </div>
+</template>
+
+<script setup>
+// SEO and Meta Tags
+useHead({
+  title: 'GEC Pathways - Study in China | MBBS & More | Doctor-Led Consultancy',
+  meta: [
+    {
+      name: 'description',
+      content: 'Study in China with GEC Pathways. Doctor-led education consultancy with 500+ successful students, 95% visa success rate. MBBS, Engineering, Business programs available.'
+    },
+    {
+      name: 'keywords',
+      content: 'study in china, mbbs in china, education consultancy, chinese universities, study abroad, pakistan students china, medical degree china'
+    },
+    {
+      property: 'og:title',
+      content: 'GEC Pathways - Your Gateway to Studying in China'
+    },
+    {
+      property: 'og:description',
+      content: 'Expert guidance from doctor-led team. 500+ successful students. 95% visa success rate. Based in Jingzhou, China.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ]
+})
+
+// Schema.org structured data
+useSchemaOrg([
+  {
+    '@type': 'EducationalOrganization',
+    name: 'Global Educational Consultants (GEC Pathways)',
+    description: 'Expert education consultancy for international students studying in China',
+    url: 'https://gec-pathways.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Jingzhou',
+      addressRegion: 'Hubei',
+      addressCountry: 'CN'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+86-XXX-XXXX-XXXX',
+      contactType: 'Customer Service',
+      availableLanguage: ['English', 'Urdu', 'Arabic', 'Chinese']
+    }
+  }
+])
+</script>
