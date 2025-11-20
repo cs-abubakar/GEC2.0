@@ -60,28 +60,30 @@ useHead({
       property: 'og:type',
       content: 'website'
     }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'EducationalOrganization',
+        name: 'Global Educational Consultants (GEC Pathways)',
+        description: 'Expert education consultancy for international students studying in China',
+        url: 'https://gec-pathways.com',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Jingzhou',
+          addressRegion: 'Hubei',
+          addressCountry: 'CN'
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+86-XXX-XXXX-XXXX',
+          contactType: 'Customer Service',
+          availableLanguage: ['English', 'Urdu', 'Arabic', 'Chinese']
+        }
+      })
+    }
   ]
 })
-
-// Schema.org structured data
-useSchemaOrg([
-  {
-    '@type': 'EducationalOrganization',
-    name: 'Global Educational Consultants (GEC Pathways)',
-    description: 'Expert education consultancy for international students studying in China',
-    url: 'https://gec-pathways.com',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Jingzhou',
-      addressRegion: 'Hubei',
-      addressCountry: 'CN'
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+86-XXX-XXXX-XXXX',
-      contactType: 'Customer Service',
-      availableLanguage: ['English', 'Urdu', 'Arabic', 'Chinese']
-    }
-  }
-])
 </script>

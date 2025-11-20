@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  ssr: true,
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -42,7 +43,13 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/sitemap.xml', '/robots.txt']
+      routes: [
+        '/',
+        '/about',
+        '/contact'
+      ],
+      crawlLinks: false,
+      failOnError: false
     }
   }
 })
