@@ -21,8 +21,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </div>
-          <div class="stat-number text-primary-green" ref="stat2">3</div>
-          <div class="stat-label">Doctors on Team</div>
+          <div class="stat-number text-primary-green" ref="stat2">50+</div>
+          <div class="stat-label">Expert Team Members</div>
         </div>
 
         <!-- Stat 3 -->
@@ -84,7 +84,7 @@ onMounted(() => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animateValue(stat1.value, 0, 500, 2000, '+')
-        animateValue(stat2.value, 0, 3, 2000)
+        animateValue(stat2.value, 0, 50, 2000, '+')
         animateValue(stat3.value, 0, 95, 2000, '%')
         animateValue(stat4.value, 0, 15, 2000, '+')
         observer.unobserve(entry.target)
