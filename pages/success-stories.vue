@@ -397,6 +397,143 @@
       </div>
     </section>
 
+    <!-- Documents & Achievements Gallery -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 font-display">Real Documents, Real Success</h2>
+            <p class="text-xl text-gray-600">
+              Admission notices, visas, HSK certificates, and more from our successful students
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+              <div class="text-6xl mb-4">📜</div>
+              <h3 class="text-2xl font-bold mb-3 text-primary-blue">Admission Notices</h3>
+              <p class="text-gray-600 mb-4">
+                Official admission letters from top Chinese universities including Tsinghua, Peking University, Fudan, and more.
+              </p>
+              <div class="text-sm text-gray-500">500+ admission letters secured</div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+              <div class="text-6xl mb-4">✈️</div>
+              <h3 class="text-2xl font-bold mb-3 text-primary-green">Student Visas</h3>
+              <p class="text-gray-600 mb-4">
+                X1 student visas and JW202 forms successfully obtained. Our 95% visa success rate speaks for itself.
+              </p>
+              <div class="text-sm text-gray-500">95% visa approval rate</div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all text-center">
+              <div class="text-6xl mb-4">🎓</div>
+              <h3 class="text-2xl font-bold mb-3 text-primary-blue">HSK Certificates</h3>
+              <p class="text-gray-600 mb-4">
+                Students achieving HSK Level 3, 4, 5, and 6 certifications. Chinese language proficiency opens more opportunities.
+              </p>
+              <div class="text-sm text-gray-500">100+ HSK certified students</div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-primary-blue to-primary-green text-white p-8 rounded-xl">
+            <div class="text-center">
+              <h3 class="text-2xl md:text-3xl font-bold mb-4">📸 Document Verification Available</h3>
+              <p class="text-lg mb-4">
+                We can show you real admission notices, JW202 forms, visa stamps, and HSK certificates from our students. Everything is authentic and verifiable. Visit our office or request copies during your assessment.
+              </p>
+              <p class="text-accent-yellow font-semibold">
+                Transparency and trust are the foundation of our relationship with students and families.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ceremonies & Recognition -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 font-display">Celebrating Student Success</h2>
+            <p class="text-xl text-gray-600">
+              We host ceremonies and events to recognize and encourage our students
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="text-5xl mb-4">🎉</div>
+              <h3 class="text-2xl font-bold mb-4 text-primary-blue">Welcome Ceremonies</h3>
+              <p class="text-gray-600 mb-4">
+                Every year, we organize welcome ceremonies for new students arriving in China. Meet fellow students, get orientation, receive welcome kits, and start your journey with confidence.
+              </p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Campus orientation tours</li>
+                <li>• Meet senior students from your country</li>
+                <li>• Cultural adaptation workshops</li>
+                <li>• Welcome dinner and networking</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="text-5xl mb-4">🏆</div>
+              <h3 class="text-2xl font-bold mb-4 text-primary-green">Excellence Awards</h3>
+              <p class="text-gray-600 mb-4">
+                GEC recognizes and rewards students who achieve top positions in their classes. We celebrate academic excellence and hard work!
+              </p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• <strong>Gold Medal:</strong> Top position in class</li>
+                <li>• <strong>Silver Medal:</strong> Top 3 in class</li>
+                <li>• <strong>Bronze Medal:</strong> Top 5 in class</li>
+                <li>• <strong>Merit Certificates:</strong> GPA above 85%</li>
+                <li>• <strong>Cash Awards:</strong> For outstanding performance</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="text-5xl mb-4">🎊</div>
+              <h3 class="text-2xl font-bold mb-4 text-primary-blue">Cultural Events</h3>
+              <p class="text-gray-600 mb-4">
+                Regular events to celebrate festivals, achievements, and build community among GEC students studying across different Chinese cities.
+              </p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Independence Day celebrations</li>
+                <li>• Eid gatherings for Muslim students</li>
+                <li>• Spring Festival events</li>
+                <li>• Sports tournaments</li>
+                <li>• Talent shows and competitions</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="text-5xl mb-4">👨‍🎓</div>
+              <h3 class="text-2xl font-bold mb-4 text-primary-green">Graduation Celebrations</h3>
+              <p class="text-gray-600 mb-4">
+                When you graduate, we celebrate your success! Special graduation ceremonies where we honor our students who successfully completed their degrees.
+              </p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Graduation ceremony attendance</li>
+                <li>• Success story documentation</li>
+                <li>• Career guidance sessions</li>
+                <li>• Alumni network introduction</li>
+                <li>• Lifetime support and mentorship</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-12 bg-gradient-to-r from-accent-yellow/90 to-primary-green text-white p-8 rounded-xl text-center">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">You're Not Just a Student Number to Us</h3>
+            <p class="text-lg">
+              At GEC, every student is part of our family. We celebrate your wins, support you through challenges, encourage your growth, and take pride in your achievements. Your success is our success, and we're with you every step of the way!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-br from-primary-blue via-primary-green to-accent-purple/70 text-white">
       <div class="container mx-auto px-4 text-center">
