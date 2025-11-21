@@ -33,6 +33,180 @@
         </nav>
       </div>
 
+      <!-- Leads Management (CRM) -->
+      <div v-if="activeTab === 'leads'" class="bg-white rounded-lg shadow p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-semibold">Leads Management (Mini CRM)</h2>
+          <button
+            @click="exportLeads"
+            class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Export to Excel
+          </button>
+        </div>
+
+        <!-- Filters -->
+        <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+          <h3 class="font-semibold mb-4">Filters</h3>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1">Status</label>
+              <select v-model="leadFilters.status" class="w-full px-3 py-2 border rounded-lg text-sm">
+                <option value="all">All Status</option>
+                <option value="new">New</option>
+                <option value="contacted">Contacted</option>
+                <option value="qualified">Qualified</option>
+                <option value="converted">Converted</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Country</label>
+              <select v-model="leadFilters.country" class="w-full px-3 py-2 border rounded-lg text-sm">
+                <option value="all">All Countries</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Program</label>
+              <select v-model="leadFilters.program" class="w-full px-3 py-2 border rounded-lg text-sm">
+                <option value="all">All Programs</option>
+                <option value="MBBS">MBBS</option>
+                <option value="BDS">BDS</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business">Business</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Date Range</label>
+              <input v-model="leadFilters.dateFrom" type="date" class="w-full px-3 py-2 border rounded-lg text-sm" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Leads Stats -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+          <div class="bg-blue-50 p-4 rounded-lg">
+            <div class="text-2xl font-bold text-blue-600">{{ leadsStats.total }}</div>
+            <div class="text-sm text-gray-600">Total Leads</div>
+          </div>
+          <div class="bg-yellow-50 p-4 rounded-lg">
+            <div class="text-2xl font-bold text-yellow-600">{{ leadsStats.new }}</div>
+            <div class="text-sm text-gray-600">New Leads</div>
+          </div>
+          <div class="bg-green-50 p-4 rounded-lg">
+            <div class="text-2xl font-bold text-green-600">{{ leadsStats.converted }}</div>
+            <div class="text-sm text-gray-600">Converted</div>
+          </div>
+          <div class="bg-purple-50 p-4 rounded-lg">
+            <div class="text-2xl font-bold text-purple-600">{{ leadsStats.today }}</div>
+            <div class="text-sm text-gray-600">Today</div>
+          </div>
+        </div>
+
+        <!-- Leads Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Name</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Contact</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Country</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Program</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Source</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr v-for="lead in filteredLeads" :key="lead.id" class="hover:bg-gray-50">
+                <td class="px-4 py-3 whitespace-nowrap">
+                  <div class="font-medium text-gray-900">{{ lead.name }}</div>
+                </td>
+                <td class="px-4 py-3">
+                  <div class="text-sm text-gray-900">{{ lead.email }}</div>
+                  <div class="text-sm text-gray-500">{{ lead.phone }}</div>
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm">{{ lead.country }}</td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm">{{ lead.programInterest }}</td>
+                <td class="px-4 py-3 whitespace-nowrap">
+                  <select
+                    :value="lead.status"
+                    @change="updateLeadStatus(lead.id, $event.target.value)"
+                    class="px-2 py-1 text-xs rounded-full border"
+                    :class="{
+                      'bg-yellow-100 text-yellow-800 border-yellow-200': lead.status === 'new',
+                      'bg-blue-100 text-blue-800 border-blue-200': lead.status === 'contacted',
+                      'bg-purple-100 text-purple-800 border-purple-200': lead.status === 'qualified',
+                      'bg-green-100 text-green-800 border-green-200': lead.status === 'converted'
+                    }"
+                  >
+                    <option value="new">New</option>
+                    <option value="contacted">Contacted</option>
+                    <option value="qualified">Qualified</option>
+                    <option value="converted">Converted</option>
+                  </select>
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">{{ lead.source }}</td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500">
+                  {{ new Date(lead.createdAt).toLocaleDateString() }}
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm">
+                  <button
+                    @click="viewLead(lead)"
+                    class="text-primary-blue hover:text-primary-green mr-2"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div v-if="filteredLeads.length === 0" class="text-center py-8 text-gray-500">
+            No leads found matching your filters.
+          </div>
+        </div>
+
+        <!-- Lead Detail Modal -->
+        <div
+          v-if="selectedLead"
+          @click="selectedLead = null"
+          class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+        >
+          <div @click.stop class="bg-white rounded-lg max-w-2xl w-full p-6">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-semibold">Lead Details</h3>
+              <button @click="selectedLead = null" class="text-gray-400 hover:text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="space-y-3">
+              <div><strong>Name:</strong> {{ selectedLead.name }}</div>
+              <div><strong>Email:</strong> <a :href="`mailto:${selectedLead.email}`" class="text-primary-blue">{{ selectedLead.email }}</a></div>
+              <div><strong>Phone:</strong> <a :href="`tel:${selectedLead.phone}`" class="text-primary-blue">{{ selectedLead.phone }}</a></div>
+              <div><strong>Country:</strong> {{ selectedLead.country }}</div>
+              <div><strong>Program Interest:</strong> {{ selectedLead.programInterest }}</div>
+              <div><strong>Source:</strong> {{ selectedLead.source }}</div>
+              <div><strong>Status:</strong> {{ selectedLead.status }}</div>
+              <div><strong>Created:</strong> {{ new Date(selectedLead.createdAt).toLocaleString() }}</div>
+              <div v-if="selectedLead.message">
+                <strong>Message:</strong>
+                <p class="mt-1 text-gray-700 bg-gray-50 p-3 rounded">{{ selectedLead.message }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Gallery Management -->
       <div v-if="activeTab === 'gallery'" class="bg-white rounded-lg shadow p-6">
         <div class="flex justify-between items-center mb-6">
@@ -306,13 +480,14 @@ useHead({
 })
 
 const tabs = [
+  { id: 'leads', label: 'Leads (CRM)' },
   { id: 'gallery', label: 'Gallery' },
   { id: 'hsk', label: 'HSK Holders' },
   { id: 'blog', label: 'Blog' },
   { id: 'settings', label: 'Settings' }
 ]
 
-const activeTab = ref('gallery')
+const activeTab = ref('leads')
 const showAddGalleryForm = ref(false)
 const showAddHSKForm = ref(false)
 
@@ -459,14 +634,120 @@ const deleteHSKHolder = async (id) => {
   }
 }
 
+// Leads Management
+const leads = ref([])
+const selectedLead = ref(null)
+const leadFilters = ref({
+  status: 'all',
+  country: 'all',
+  program: 'all',
+  dateFrom: ''
+})
+
+const fetchLeads = async () => {
+  try {
+    const response = await fetch('/api/leads')
+    if (response.ok) {
+      leads.value = await response.json()
+    }
+  } catch (error) {
+    console.error('Failed to fetch leads:', error)
+  }
+}
+
+const filteredLeads = computed(() => {
+  let filtered = leads.value
+
+  if (leadFilters.value.status !== 'all') {
+    filtered = filtered.filter(lead => lead.status === leadFilters.value.status)
+  }
+
+  if (leadFilters.value.country !== 'all') {
+    filtered = filtered.filter(lead => lead.country === leadFilters.value.country)
+  }
+
+  if (leadFilters.value.program !== 'all') {
+    filtered = filtered.filter(lead => lead.programInterest === leadFilters.value.program)
+  }
+
+  if (leadFilters.value.dateFrom) {
+    filtered = filtered.filter(lead =>
+      new Date(lead.createdAt) >= new Date(leadFilters.value.dateFrom)
+    )
+  }
+
+  return filtered
+})
+
+const leadsStats = computed(() => {
+  const today = new Date().toDateString()
+  return {
+    total: leads.value.length,
+    new: leads.value.filter(l => l.status === 'new').length,
+    converted: leads.value.filter(l => l.status === 'converted').length,
+    today: leads.value.filter(l => new Date(l.createdAt).toDateString() === today).length
+  }
+})
+
+const updateLeadStatus = async (id, newStatus) => {
+  try {
+    const response = await fetch(`/api/leads/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: newStatus })
+    })
+
+    if (response.ok) {
+      const result = await response.json()
+      if (result.success) {
+        const leadIndex = leads.value.findIndex(l => l.id === id)
+        if (leadIndex !== -1) {
+          leads.value[leadIndex] = result.data
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Failed to update lead status:', error)
+  }
+}
+
+const viewLead = (lead) => {
+  selectedLead.value = lead
+}
+
+const exportLeads = async () => {
+  try {
+    const params = new URLSearchParams()
+    if (leadFilters.value.status !== 'all') params.append('status', leadFilters.value.status)
+    if (leadFilters.value.country !== 'all') params.append('country', leadFilters.value.country)
+    if (leadFilters.value.program !== 'all') params.append('programInterest', leadFilters.value.program)
+    if (leadFilters.value.dateFrom) params.append('dateFrom', leadFilters.value.dateFrom)
+
+    const url = `/api/leads/export?${params.toString()}`
+
+    // Create a temporary anchor element and trigger download
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `leads-export-${Date.now()}.csv`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  } catch (error) {
+    console.error('Failed to export leads:', error)
+    alert('Failed to export leads')
+  }
+}
+
 // Load data on mount
 onMounted(() => {
+  fetchLeads()
   fetchGalleryImages()
   fetchHSKHolders()
 })
 
 // Watch activeTab to load data
 watch(activeTab, (newTab) => {
+  if (newTab === 'leads') fetchLeads()
   if (newTab === 'gallery') fetchGalleryImages()
   if (newTab === 'hsk') fetchHSKHolders()
 })

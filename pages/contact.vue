@@ -98,7 +98,16 @@
                 <label class="form-label">Message</label>
                 <textarea v-model="form.message" rows="4" class="form-input" placeholder="Tell us about your goals..."></textarea>
               </div>
-              <button type="submit" class="btn-primary w-full">Submit Application</button>
+              <button type="submit" :disabled="submitting" class="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed">
+                <span v-if="!submitting">Submit Application</span>
+                <span v-else class="flex items-center justify-center gap-2">
+                  <svg class="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Submitting...
+                </span>
+              </button>
             </form>
           </div>
 
@@ -191,9 +200,58 @@ const form = ref({
   message: ''
 })
 
-const handleSubmit = () => {
-  // This would typically send to a backend API
-  alert('Thank you! We will contact you within 24 hours.')
-  console.log('Form submitted:', form.value)
+const submitting = ref(false)
+const { $gtm } = useNuxtApp()
+
+const handleSubmit = async () => {
+  if (submitting.value) return
+
+  submitting.value = true
+
+  try {
+    // Track form submission attempt
+    $gtm.trackFormSubmit('contact_form', {
+      country: form.value.country,
+      program: form.value.program
+    })
+
+    // Submit to API
+    const response = await fetch('/api/leads', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: form.value.name,
+        email: form.value.email,
+        phone: form.value.whatsapp,
+        country: form.value.country,
+        programInterest: form.value.program,
+        message: form.value.message,
+        source: 'contact_page'
+      })
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
+      // Track successful lead generation
+      $gtm.trackLead({
+        source: 'contact_page',
+        type: 'contact_form',
+        value: form.value.program
+      })
+
+      // Redirect to thank you page
+      await navigateTo('/thank-you')
+    } else {
+      throw new Error('Failed to submit form')
+    }
+  } catch (error) {
+    console.error('Form submission error:', error)
+    alert('Sorry, there was an error submitting your form. Please try contacting us via WhatsApp.')
+  } finally {
+    submitting.value = false
+  }
 }
 </script>
