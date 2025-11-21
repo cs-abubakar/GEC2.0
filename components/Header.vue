@@ -54,6 +54,7 @@
           <NuxtLink to="/scholarships" class="nav-link">Scholarships</NuxtLink>
           <NuxtLink to="/why-china" class="nav-link">Why China</NuxtLink>
           <NuxtLink to="/success-stories" class="nav-link">Success Stories</NuxtLink>
+          <NuxtLink to="/gallery" class="nav-link">Gallery</NuxtLink>
           <NuxtLink to="/blog" class="nav-link">Blog</NuxtLink>
           <NuxtLink to="/contact" class="btn-primary text-sm">Apply Now</NuxtLink>
         </div>
@@ -123,6 +124,7 @@
           <NuxtLink to="/scholarships" class="mobile-link" @click="mobileMenuOpen = false">Scholarships</NuxtLink>
           <NuxtLink to="/why-china" class="mobile-link" @click="mobileMenuOpen = false">Why China</NuxtLink>
           <NuxtLink to="/success-stories" class="mobile-link" @click="mobileMenuOpen = false">Success Stories</NuxtLink>
+          <NuxtLink to="/gallery" class="mobile-link" @click="mobileMenuOpen = false">Gallery</NuxtLink>
           <NuxtLink to="/blog" class="mobile-link" @click="mobileMenuOpen = false">Blog</NuxtLink>
           <NuxtLink to="/contact" class="btn-primary w-full mt-4" @click="mobileMenuOpen = false">Apply Now</NuxtLink>
         </div>
