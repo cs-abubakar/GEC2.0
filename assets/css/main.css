@@ -27,29 +27,57 @@
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-button hover:shadow-button-hover hover:-translate-y-1 active:translate-y-0;
+    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-button transition-all duration-300 ease-out;
+  }
+
+  .btn-primary:hover {
+    @apply shadow-button-hover -translate-y-1;
+  }
+
+  .btn-primary:active {
+    @apply translate-y-0;
   }
 
   .btn-secondary {
-    @apply border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white;
+    @apply border-2 border-brand-blue text-brand-blue transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-brand-blue text-white;
   }
 
   .btn-white {
-    @apply bg-white text-brand-ocean shadow-card hover:shadow-card-hover hover:-translate-y-1;
+    @apply bg-white text-brand-ocean shadow-card transition-all duration-300;
+  }
+
+  .btn-white:hover {
+    @apply shadow-card-hover -translate-y-1;
   }
 
   /* Modern Card Styles */
   .card {
-    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300;
+    @apply bg-white rounded-2xl shadow-card transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-card-hover;
   }
 
   .card-hover {
-    @apply hover:-translate-y-2;
+    @apply transition-transform duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-2;
   }
 
   /* Modern Form Inputs */
   .input {
-    @apply w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 transition-all duration-200;
+    @apply w-full px-4 py-3 rounded-xl border-2 border-slate-200 transition-all duration-200;
+  }
+
+  .input:focus {
+    @apply border-brand-blue ring-4 ring-brand-blue/10;
   }
 
   /* Gradient Text */
@@ -91,22 +119,38 @@
 
   /* Stats */
   .stat-card {
-    @apply text-center p-6 rounded-xl bg-gradient-to-br hover:scale-105 transition-transform duration-300;
+    @apply text-center p-6 rounded-xl bg-gradient-to-br transition-transform duration-300;
+  }
+
+  .stat-card:hover {
+    @apply scale-105;
   }
 
   /* Feature Card */
   .feature-card {
-    @apply group relative p-8 rounded-2xl bg-white shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2;
+    @apply group relative p-8 rounded-2xl bg-white shadow-card transition-all duration-300;
+  }
+
+  .feature-card:hover {
+    @apply shadow-card-hover -translate-y-2;
   }
 
   /* Icon Container */
   .icon-container {
-    @apply w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3;
+    @apply w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300;
+  }
+
+  .icon-container:is(.group:hover *) {
+    @apply scale-110 rotate-3;
   }
 
   /* Form Styles */
   .form-input {
-    @apply w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 transition-all duration-200;
+    @apply w-full px-4 py-3 rounded-xl border-2 border-slate-200 transition-all duration-200;
+  }
+
+  .form-input:focus {
+    @apply border-brand-blue ring-4 ring-brand-blue/10;
   }
 
   .form-label {
@@ -175,17 +219,29 @@
 
   /* Hover lift effect */
   .hover-lift {
-    @apply transition-transform duration-300 hover:-translate-y-2;
+    @apply transition-transform duration-300;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-2;
   }
 
   /* Hover grow effect */
   .hover-grow {
-    @apply transition-transform duration-300 hover:scale-105;
+    @apply transition-transform duration-300;
+  }
+
+  .hover-grow:hover {
+    @apply scale-105;
   }
 
   /* Hover glow effect */
   .hover-glow {
-    @apply transition-shadow duration-300 hover:shadow-glow;
+    @apply transition-shadow duration-300;
+  }
+
+  .hover-glow:hover {
+    @apply shadow-glow;
   }
 
   .text-balance {
