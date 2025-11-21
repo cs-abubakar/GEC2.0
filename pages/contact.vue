@@ -152,7 +152,7 @@
                   <svg class="w-5 h-5 text-primary-blue mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
-                  <span>Jingzhou, Hubei Province, China</span>
+                  <span>Offices in different countries, based in China</span>
                 </p>
                 <p class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-primary-blue mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

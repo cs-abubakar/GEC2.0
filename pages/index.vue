@@ -54,7 +54,7 @@ useHead({
     },
     {
       property: 'og:description',
-      content: 'Expert guidance from doctor-led team. 500+ successful students. 95% visa success rate. Based in Jingzhou, China.'
+      content: 'Expert guidance from doctor-led team. 500+ successful students. 95% visa success rate. With offices in different countries, based in China.'
     },
     {
       property: 'og:type',
@@ -72,8 +72,6 @@ useHead({
         url: 'https://gec-pathways.com',
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Jingzhou',
-          addressRegion: 'Hubei',
           addressCountry: 'CN'
         },
         contactPoint: {

@@ -42,10 +42,10 @@ const posts = [
     icon: '🎓'
   },
   {
-    slug: 'student-life-jingzhou',
-    title: 'Student Life in Jingzhou: A First-Hand Experience',
+    slug: 'student-life-china',
+    title: 'Student Life in China: A First-Hand Experience',
     category: 'Student Life',
-    excerpt: 'What it\'s really like living and studying in Jingzhou as an international student.',
+    excerpt: 'What it\'s really like living and studying in China as an international student.',
     icon: '🏙️'
   }
 ]

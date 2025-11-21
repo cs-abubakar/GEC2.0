@@ -39,7 +39,7 @@
           <!-- Sub-headline -->
           <p class="text-xl md:text-2xl mb-6 text-gray-200">
             Expert guidance from 50+ professionals • 500+ successful students<br />
-            Based in Jingzhou, China
+            With offices in different countries, based in China
           </p>
 
           <!-- Trust Micro-Badges -->

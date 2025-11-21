@@ -446,7 +446,7 @@
           </a>
         </div>
         <p class="mt-6 text-gray-200">
-          Based in Jingzhou, China - 15+ years helping students secure scholarships
+          With offices in different countries, based in China - 15+ years helping students secure scholarships
         </p>
       </div>
     </section>

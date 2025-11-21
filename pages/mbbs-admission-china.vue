@@ -500,7 +500,7 @@
             <strong>GEC (Global Educational Consultants)</strong> - Your trusted partner for MBBS in China
           </p>
           <p class="text-sm text-gray-500">
-            Based in Jingzhou, China | Serving students worldwide since 2010 | 50+ Expert Team Members
+            With offices in different countries, based in China | Serving students worldwide since 2010 | 50+ Expert Team Members
           </p>
         </div>
       </div>

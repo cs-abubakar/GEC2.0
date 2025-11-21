@@ -500,7 +500,7 @@
           </a>
         </div>
         <p class="text-gray-600">
-          <strong>Based in Jingzhou, China</strong> - We're here to help you succeed!
+          <strong>With offices in different countries, based in China</strong> - We're here to help you succeed!
         </p>
       </div>
     </section>

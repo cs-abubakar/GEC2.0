@@ -99,7 +99,7 @@ let autoplayInterval = null
 const fears = [
   {
     headline: 'Worried About Scams?',
-    body: "We're registered and based in Jingzhou, China. Visit our physical office. Meet our team. We're not hiding behind emails.",
+    body: "We're registered with offices in different countries, based in China. Visit our physical offices. Meet our team. We're not hiding behind emails.",
     ctaText: 'See Our Office Photos',
     icon: '🛡️',
     imageAlt: 'Professional Office',

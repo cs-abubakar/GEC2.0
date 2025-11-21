@@ -163,9 +163,9 @@
       <div class="container-custom">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="mb-6">Visit Us in Jingzhou, China</h2>
+            <h2 class="mb-6">Visit Our Offices</h2>
             <p class="text-body-lg text-gray-700 mb-6">
-              Unlike many education consultancies that operate remotely, we're physically based in Jingzhou, China—right where most of our students study. This means we can provide on-ground support 24/7.
+              Unlike many education consultancies that operate remotely, we have physical offices in different countries with our main base in China—right where most of our students study. This means we can provide on-ground support 24/7.
             </p>
             <div class="space-y-4">
               <div class="flex gap-4">
@@ -174,7 +174,7 @@
                 </svg>
                 <div>
                   <h4 class="font-semibold mb-1">Global Educational Consultants</h4>
-                  <p class="text-gray-600">Jingzhou, Hubei Province, China 434000</p>
+                  <p class="text-gray-600">Offices in different countries, based in China</p>
                 </div>
               </div>
               <div class="flex gap-4">
@@ -201,7 +201,7 @@
           </div>
           <div class="bg-gradient-to-br from-primary-blue/20 to-primary-green/20 rounded-2xl p-12 text-center">
             <div class="text-6xl mb-4">🏢</div>
-            <h3 class="text-2xl font-semibold mb-4">Our Office in Jingzhou</h3>
+            <h3 class="text-2xl font-semibold mb-4">Our Global Offices</h3>
             <p class="text-gray-700 mb-6">
               Modern facilities, welcoming environment, and a team always ready to help you
             </p>
@@ -265,7 +265,7 @@
 useHead({
   title: 'About Us - Our Story Built on Trust | Global Educational Consultants',
   meta: [
-    { name: 'description', content: 'Discover the story of GEC - founded by doctors who studied in China, now helping 500+ students achieve their dreams. Based in Jingzhou with 50+ dedicated professionals.' }
+    { name: 'description', content: 'Discover the story of GEC - founded by doctors who studied in China, now helping 500+ students achieve their dreams. With offices in different countries and 50+ dedicated professionals.' }
   ]
 })
 

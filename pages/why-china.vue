@@ -465,7 +465,7 @@
           </a>
         </div>
         <p class="mt-6 text-gray-200">
-          Based in Jingzhou, China - 95% visa success rate - 15+ years experience
+          With offices in different countries, based in China - 95% visa success rate - 15+ years experience
         </p>
       </div>
     </section>

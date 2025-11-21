@@ -152,7 +152,7 @@
                     "I chose China because of CPEC and the growing Pakistan-China business ties. GEC helped me get into Zhejiang University in Hangzhou - the city where Alibaba is headquartered. It was like studying business in the heart of global e-commerce!"
                   </p>
                   <p>
-                    "Beyond academics, I learned Mandarin Chinese. I knew this would be my competitive advantage. The GEC team in Jingzhou was always available when I needed help - whether it was course selection, finding halal food, or even just someone to talk to when I felt homesick."
+                    "Beyond academics, I learned Mandarin Chinese. I knew this would be my competitive advantage. The GEC team in China was always available when I needed help - whether it was course selection, finding halal food, or even just someone to talk to when I felt homesick."
                   </p>
                   <p>
                     "During my final year, I interned at a Chinese tech company in Hangzhou. They were so impressed that they offered me a position in their Pakistan office after graduation. I couldn't believe it!"
@@ -550,7 +550,7 @@
           </a>
         </div>
         <p class="mt-6 text-gray-200">
-          Based in Jingzhou, China - Supporting students worldwide
+          With offices in different countries, based in China - Supporting students worldwide
         </p>
       </div>
     </section>

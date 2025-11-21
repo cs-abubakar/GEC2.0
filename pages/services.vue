@@ -399,7 +399,7 @@
             <div class="bg-gradient-to-br from-primary-blue to-primary-green text-white p-8 rounded-xl">
               <h3 class="text-2xl font-bold mb-6">We're Based in China</h3>
               <p class="mb-4">
-                Unlike agents operating from outside China, our team of 50+ professionals is physically located in Jingzhou, China. This means:
+                Unlike agents operating from outside China, our team of 50+ professionals has offices in different countries with our main base in China. This means:
               </p>
               <ul class="space-y-2">
                 <li>✓ We personally know the universities</li>
@@ -480,7 +480,7 @@
           </a>
         </div>
         <p class="mt-6 text-gray-200">
-          Based in Jingzhou, China - Serving students worldwide
+          With offices in different countries, based in China - Serving students worldwide
         </p>
       </div>
     </section>
