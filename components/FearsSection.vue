@@ -1,69 +1,94 @@
 <template>
-  <section class="section bg-white">
-    <div class="container-custom">
+  <section class="section bg-gradient-to-br from-white via-slate-50 to-white relative overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute top-20 right-0 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-0 w-96 h-96 bg-brand-purple/5 rounded-full blur-3xl"></div>
+
+    <div class="container-custom relative z-10">
       <!-- Section Header -->
-      <div class="text-center mb-12">
-        <h2 class="mb-4">We Understand Your Fears</h2>
-        <p class="text-body-lg text-gray-600 max-w-3xl mx-auto">
+      <div class="text-center mb-16 scroll-reveal">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/10 text-brand-blue font-semibold mb-4">
+          <span class="text-xl">🛡️</span>
+          <span>Your Concerns, Our Solutions</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-brand-ocean via-brand-blue to-brand-purple bg-clip-text text-transparent">
+          We Understand Your Fears
+        </h2>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
           Studying abroad is a big decision. We've helped 500+ students overcome these exact concerns.
         </p>
       </div>
 
       <!-- Desktop: Slider -->
-      <div class="hidden md:block">
-        <div class="relative h-96 overflow-hidden rounded-2xl">
+      <div class="hidden md:block scroll-reveal">
+        <div class="relative h-[500px] overflow-hidden rounded-3xl shadow-xl-soft">
           <!-- Slides -->
           <div
             v-for="(fear, index) in fears"
             :key="index"
             :class="['absolute inset-0 transition-all duration-700 ease-in-out', currentFear === index ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full']"
-            :style="`background: linear-gradient(135deg, ${fear.bgColor}20 0%, ${fear.bgColor}10 100%);`"
           >
-            <div class="grid md:grid-cols-2 gap-8 h-full p-12 items-center">
+            <!-- Gradient Background -->
+            <div class="absolute inset-0" :style="`background: linear-gradient(135deg, ${fear.bgColor}15 0%, ${fear.bgColor}05 100%);`"></div>
+
+            <div class="grid md:grid-cols-2 gap-12 h-full p-12 items-center relative z-10">
               <!-- Left: Content -->
               <div>
-                <h3 class="mb-4">{{ fear.headline }}</h3>
-                <p class="text-body-lg text-gray-700 mb-6">{{ fear.body }}</p>
-                <button v-if="fear.ctaText" class="btn-secondary">
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass mb-6">
+                  <span class="text-3xl">{{ fear.icon }}</span>
+                  <span class="font-semibold text-brand-ocean">{{ fear.imageAlt }}</span>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-brand-ocean">{{ fear.headline }}</h3>
+                <p class="text-lg text-slate-700 mb-8 leading-relaxed">{{ fear.body }}</p>
+                <button v-if="fear.ctaText" class="btn-primary">
                   {{ fear.ctaText }}
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
                 </button>
               </div>
-              <!-- Right: Image Placeholder -->
+
+              <!-- Right: Visual Element -->
               <div class="flex items-center justify-center">
-                <div class="w-full h-64 bg-white/50 backdrop-blur-sm rounded-xl flex items-center justify-center border-2 border-white">
-                  <div class="text-center p-6">
-                    <div class="text-6xl mb-4">{{ fear.icon }}</div>
-                    <p class="text-gray-600 font-medium">{{ fear.imageAlt }}</p>
+                <div class="relative">
+                  <div class="w-80 h-80 glass rounded-3xl flex items-center justify-center border-2 border-white/40 shadow-card-hover hover:scale-105 transition-transform duration-500">
+                    <div class="text-center p-8">
+                      <div class="text-9xl mb-6 animate-bounce-subtle">{{ fear.icon }}</div>
+                      <p class="text-xl font-bold text-brand-ocean">{{ fear.imageAlt }}</p>
+                    </div>
                   </div>
+                  <!-- Decorative circles -->
+                  <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full blur-2xl opacity-50" :style="`background: ${fear.bgColor};`"></div>
+                  <div class="absolute -bottom-4 -left-4 w-32 h-32 rounded-full blur-2xl opacity-30" :style="`background: ${fear.bgColor};`"></div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Navigation Dots -->
-          <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
+          <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 glass px-4 py-3 rounded-full">
             <button
               v-for="(_, index) in fears"
               :key="index"
               @click="currentFear = index"
-              :class="['w-3 h-3 rounded-full transition-all', currentFear === index ? 'bg-primary-blue w-8' : 'bg-gray-300']"
+              :class="['h-2.5 rounded-full transition-all duration-300', currentFear === index ? 'bg-brand-blue w-10' : 'bg-slate-300 w-2.5 hover:bg-slate-400']"
             ></button>
           </div>
 
           <!-- Arrow Navigation -->
           <button
             @click="prevFear"
-            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors"
+            class="absolute left-6 top-1/2 transform -translate-y-1/2 glass rounded-full p-4 shadow-card hover:shadow-card-hover hover:scale-110 transition-all group"
           >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-brand-ocean group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             @click="nextFear"
-            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors"
+            class="absolute right-6 top-1/2 transform -translate-y-1/2 glass rounded-full p-4 shadow-card hover:shadow-card-hover hover:scale-110 transition-all group"
           >
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-brand-ocean group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -75,15 +100,28 @@
         <div
           v-for="(fear, index) in fears"
           :key="index"
-          class="card p-6"
-          :style="`border-left: 4px solid ${fear.bgColor};`"
+          class="card card-hover p-6 scroll-reveal relative overflow-hidden"
         >
-          <div class="text-4xl mb-4">{{ fear.icon }}</div>
-          <h3 class="text-2xl mb-3">{{ fear.headline }}</h3>
-          <p class="text-gray-700 mb-4">{{ fear.body }}</p>
-          <button v-if="fear.ctaText" class="btn-secondary">
-            {{ fear.ctaText }}
-          </button>
+          <!-- Gradient Border -->
+          <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl" :style="`background: ${fear.bgColor};`"></div>
+
+          <!-- Decorative Background -->
+          <div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-3xl opacity-10" :style="`background: ${fear.bgColor};`"></div>
+
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass mb-4">
+              <span class="text-3xl">{{ fear.icon }}</span>
+              <span class="text-sm font-semibold text-brand-ocean">{{ fear.imageAlt }}</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-brand-ocean">{{ fear.headline }}</h3>
+            <p class="text-slate-700 mb-4 leading-relaxed">{{ fear.body }}</p>
+            <button v-if="fear.ctaText" class="btn-primary text-sm">
+              {{ fear.ctaText }}
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -92,6 +130,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+
+// Use scroll reveal composable for animations
+useScrollReveal()
 
 const currentFear = ref(0)
 let autoplayInterval = null
