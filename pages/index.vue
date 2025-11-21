@@ -38,11 +38,11 @@
 <script setup>
 // SEO and Meta Tags
 useHead({
-  title: 'GEC Pathways - Study in China | MBBS & More | Doctor-Led Consultancy',
+  title: 'GEC - Study in China | MBBS & More | Expert Education Consultancy',
   meta: [
     {
       name: 'description',
-      content: 'Study in China with GEC Pathways. Doctor-led education consultancy with 500+ successful students, 95% visa success rate. MBBS, Engineering, Business programs available.'
+      content: 'Study in China with GEC. Expert education consultancy with 500+ successful students, 95% visa success rate. MBBS, Engineering, Business programs available.'
     },
     {
       name: 'keywords',
@@ -50,11 +50,11 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'GEC Pathways - Your Gateway to Studying in China'
+      content: 'GEC - Your Gateway to Studying in China'
     },
     {
       property: 'og:description',
-      content: 'Expert guidance from doctor-led team. 500+ successful students. 95% visa success rate. With offices in different countries, based in China.'
+      content: 'Expert guidance from professional team. 500+ successful students. 95% visa success rate. With offices in different countries, based in China.'
     },
     {
       property: 'og:type',
@@ -67,9 +67,9 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'EducationalOrganization',
-        name: 'Global Educational Consultants (GEC Pathways)',
+        name: 'Global Educational Consultants (GEC)',
         description: 'Expert education consultancy for international students studying in China',
-        url: 'https://gec-pathways.com',
+        url: 'https://gec.com',
         address: {
           '@type': 'PostalAddress',
           addressCountry: 'CN'

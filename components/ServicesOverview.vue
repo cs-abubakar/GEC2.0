@@ -1,25 +1,53 @@
 <template>
-  <section class="section bg-white">
-    <div class="container-custom">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div v-for="service in services" :key="service.title" class="text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-primary-blue/10 rounded-full flex items-center justify-center">
-            <svg class="w-8 h-8 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <section class="section bg-white relative overflow-hidden">
+    <!-- Decorative Background -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-amber/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="text-center mb-16 scroll-reveal">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-amber/10 text-brand-amber font-semibold mb-4">
+          <span class="text-xl">🎯</span>
+          <span>Our Services</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-brand-ocean via-brand-blue to-brand-purple bg-clip-text text-transparent">
+          End-to-End Support
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          v-for="(service, index) in services"
+          :key="service.title"
+          class="group text-center card card-hover p-8 scroll-reveal"
+          :class="`animation-delay-${index * 100}`"
+        >
+          <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-brand-blue/10 to-brand-purple/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+            <svg class="w-8 h-8 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="service.icon" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">{{ service.title }}</h3>
-          <p class="text-gray-600 text-sm">{{ service.description }}</p>
+          <h3 class="text-xl font-bold mb-3 text-brand-ocean group-hover:text-brand-blue transition-colors">{{ service.title }}</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">{{ service.description }}</p>
         </div>
       </div>
-      <div class="text-center mt-12">
-        <NuxtLink to="/services" class="btn-secondary">View All Services</NuxtLink>
+
+      <div class="text-center mt-12 scroll-reveal animation-delay-400">
+        <NuxtLink to="/services" class="btn-primary inline-flex items-center gap-2">
+          View All Services
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+// Use scroll reveal composable for animations
+useScrollReveal()
+
 const services = [
   {
     title: 'University Placement',
