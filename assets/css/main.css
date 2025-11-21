@@ -128,7 +128,7 @@
 
   /* Feature Card */
   .feature-card {
-    @apply group relative p-8 rounded-2xl bg-white shadow-card transition-all duration-300;
+    @apply relative p-8 rounded-2xl bg-white shadow-card transition-all duration-300;
   }
 
   .feature-card:hover {
@@ -140,7 +140,7 @@
     @apply w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300;
   }
 
-  .icon-container:is(.group:hover *) {
+  .group:hover .icon-container {
     @apply scale-110 rotate-3;
   }
 
