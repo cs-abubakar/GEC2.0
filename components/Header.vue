@@ -1,8 +1,8 @@
 <template>
   <header
     :class="[
-      'sticky top-0 z-50 transition-all duration-300',
-      scrolled ? 'glass shadow-xl-soft' : 'bg-white/95 backdrop-blur-md'
+      'sticky top-0 z-50 transition-all duration-300 bg-white border-b border-slate-100',
+      scrolled ? 'shadow-lg' : ''
     ]"
   >
     <nav class="container-custom">
@@ -31,7 +31,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-72 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
+            <div class="absolute top-full left-0 mt-2 w-72 bg-white rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border border-slate-200 transform group-hover:translate-y-0 translate-y-2">
               <NuxtLink to="/programs/mbbs" class="dropdown-link">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white text-xl">🩺</div>
                 <div>
@@ -71,7 +71,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
+            <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border border-slate-200 transform group-hover:translate-y-0 translate-y-2">
               <NuxtLink to="/countries/pakistan" class="dropdown-link">
                 <span class="text-3xl">🇵🇰</span>
                 <div>
@@ -126,15 +126,15 @@
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
 
-          <!-- Success Stories Dropdown -->
+          <!-- Student Life Dropdown -->
           <div class="relative group">
             <button class="nav-link flex items-center gap-1">
-              Success Stories
+              Student Life
               <svg class="w-4 h-4 transition-transform group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full right-0 mt-2 w-56 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
+            <div class="absolute top-full right-0 mt-2 w-56 bg-white rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border border-slate-200 transform group-hover:translate-y-0 translate-y-2">
               <NuxtLink to="/success-stories" class="dropdown-link">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-emerald to-brand-teal flex items-center justify-center text-white text-xl">⭐</div>
                 <div>
@@ -259,10 +259,10 @@
           <NuxtLink to="/services" class="mobile-link" @click="mobileMenuOpen = false">🎯 Services</NuxtLink>
           <NuxtLink to="/scholarships" class="mobile-link" @click="mobileMenuOpen = false">💰 Scholarships</NuxtLink>
 
-          <!-- Mobile Success Stories -->
+          <!-- Mobile Student Life -->
           <div>
             <button @click="successOpen = !successOpen" class="mobile-link w-full flex items-center justify-between">
-              <span>⭐ Success Stories</span>
+              <span>⭐ Student Life</span>
               <svg class="w-4 h-4 transition-transform duration-300" :class="{'rotate-180': successOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>

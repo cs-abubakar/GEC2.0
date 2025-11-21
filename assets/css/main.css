@@ -21,37 +21,45 @@
 }
 
 @layer components {
-  /* Modern Button Styles */
+  /* Modern Button Styles - Fully Rounded */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-button font-semibold transition-all duration-300 ease-out;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-out;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-button transition-all duration-300 ease-out;
+    @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-lg transition-all duration-300 ease-out;
   }
 
   .btn-primary:hover {
-    @apply shadow-button-hover -translate-y-1;
+    @apply shadow-xl -translate-y-0.5 scale-105;
   }
 
   .btn-primary:active {
-    @apply translate-y-0;
+    @apply translate-y-0 scale-100;
   }
 
   .btn-secondary {
-    @apply border-2 border-brand-blue text-brand-blue transition-all duration-300;
+    @apply border-2 border-brand-ocean text-brand-ocean bg-white shadow-md transition-all duration-300;
   }
 
   .btn-secondary:hover {
-    @apply bg-brand-blue text-white;
+    @apply bg-brand-ocean text-white shadow-lg -translate-y-0.5;
   }
 
   .btn-white {
-    @apply bg-white text-brand-ocean shadow-card transition-all duration-300;
+    @apply bg-white text-brand-ocean shadow-lg border-2 border-slate-200 transition-all duration-300;
   }
 
   .btn-white:hover {
-    @apply shadow-card-hover -translate-y-1;
+    @apply shadow-xl -translate-y-0.5 border-brand-blue;
+  }
+
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-white shadow-lg transition-all duration-300;
+  }
+
+  .btn-whatsapp:hover {
+    @apply bg-[#20BA5A] shadow-xl -translate-y-0.5 scale-105;
   }
 
   /* Modern Card Styles */
@@ -99,9 +107,13 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Glassmorphism */
+  /* Glassmorphism - Solid for readability */
   .glass {
-    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl;
+    @apply bg-white/95 backdrop-blur-sm border border-slate-200 shadow-lg;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/95 backdrop-blur-sm border border-white/10 shadow-lg;
   }
 
   /* Badge */

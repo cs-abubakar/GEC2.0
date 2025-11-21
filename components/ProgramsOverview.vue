@@ -92,8 +92,7 @@
             </ul>
 
             <!-- CTA Section -->
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-4 border-t border-slate-100">
-              <span class="text-3xl font-bold bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">From $4,000/year</span>
+            <div class="flex justify-end gap-4 pt-4 border-t border-slate-100">
               <NuxtLink to="/programs/mbbs" class="btn-primary">
                 Explore MBBS
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -149,9 +148,6 @@
 
             <!-- CTA Section -->
             <div class="mt-auto pt-4 border-t border-slate-100">
-              <span v-if="program.price" class="text-xl font-bold bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent block mb-3">
-                {{ program.price }}
-              </span>
               <NuxtLink :to="`/programs/${program.slug}`" class="btn-secondary w-full text-center inline-flex items-center justify-center gap-2">
                 Learn More
                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -181,8 +177,7 @@ const otherPrograms = [
       'Qualified Foreign Teachers',
       'Mock Exams & Cultural Activities',
       '6 Months or 1 Year Options'
-    ],
-    price: 'From $2,000'
+    ]
   },
   {
     title: 'International Economy & Trade',

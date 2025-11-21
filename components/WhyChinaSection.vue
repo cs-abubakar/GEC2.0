@@ -8,7 +8,7 @@
     <div class="container-custom relative z-10">
       <!-- Section Header -->
       <div class="text-center mb-16 scroll-reveal">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/20 text-white font-semibold mb-4">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/30 text-white font-semibold mb-4 shadow-lg">
           <span class="text-xl">🇨🇳</span>
           <span>Study in China</span>
         </div>
@@ -22,14 +22,14 @@
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="group text-center glass p-6 rounded-2xl border border-white/10 hover:border-white/30 hover:-translate-y-2 transition-all duration-300 scroll-reveal"
+          class="group text-center bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 scroll-reveal"
           :class="`animation-delay-${Math.min(index, 5) * 100}`"
         >
-          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-blue/20 to-brand-teal/20 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+          <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-blue to-brand-purple rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md">
             <div class="text-4xl">{{ benefit.icon }}</div>
           </div>
-          <h3 class="text-xl font-bold mb-3 text-white">{{ benefit.title }}</h3>
-          <p class="text-slate-300 text-sm leading-relaxed">{{ benefit.description }}</p>
+          <h3 class="text-xl font-bold mb-3 text-brand-ocean">{{ benefit.title }}</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">{{ benefit.description }}</p>
         </div>
       </div>
 
