@@ -31,7 +31,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-72 glass rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-xl-soft transform group-hover:translate-y-0 translate-y-2">
+            <div class="absolute top-full left-0 mt-2 w-72 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
               <NuxtLink to="/programs/mbbs" class="dropdown-link">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white text-xl">🩺</div>
                 <div>
@@ -71,7 +71,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-64 glass rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-xl-soft transform group-hover:translate-y-0 translate-y-2">
+            <div class="absolute top-full left-0 mt-2 w-64 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
               <NuxtLink to="/countries/pakistan" class="dropdown-link">
                 <span class="text-3xl">🇵🇰</span>
                 <div>
@@ -79,13 +79,41 @@
                   <div class="text-xs text-slate-500">500+ Students</div>
                 </div>
               </NuxtLink>
-              <div class="dropdown-link opacity-50 cursor-not-allowed">
+              <NuxtLink to="/countries/saudi-arabia" class="dropdown-link">
+                <span class="text-3xl">🇸🇦</span>
+                <div>
+                  <div class="font-semibold text-slate-900">Saudi Arabia</div>
+                  <div class="text-xs text-slate-500">Growing Community</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink to="/countries/yemen" class="dropdown-link">
+                <span class="text-3xl">🇾🇪</span>
+                <div>
+                  <div class="font-semibold text-slate-900">Yemen</div>
+                  <div class="text-xs text-slate-500">Active Programs</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink to="/countries/iran" class="dropdown-link">
+                <span class="text-3xl">🇮🇷</span>
+                <div>
+                  <div class="font-semibold text-slate-900">Iran</div>
+                  <div class="text-xs text-slate-500">New Opportunities</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink to="/countries/india" class="dropdown-link">
                 <span class="text-3xl">🇮🇳</span>
                 <div>
                   <div class="font-semibold text-slate-900">India</div>
-                  <div class="text-xs text-brand-blue">Coming Soon</div>
+                  <div class="text-xs text-slate-500">Expanding Soon</div>
                 </div>
-              </div>
+              </NuxtLink>
+              <NuxtLink to="/countries/bangladesh" class="dropdown-link">
+                <span class="text-3xl">🇧🇩</span>
+                <div>
+                  <div class="font-semibold text-slate-900">Bangladesh</div>
+                  <div class="text-xs text-slate-500">Expanding Soon</div>
+                </div>
+              </NuxtLink>
             </div>
           </div>
 
@@ -97,21 +125,40 @@
             <span>Scholarships</span>
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
-          <NuxtLink to="/success-stories" class="nav-link group">
-            <span>Success</span>
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
-          </NuxtLink>
-          <NuxtLink to="/gallery" class="nav-link group">
-            <span>Gallery</span>
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
-          </NuxtLink>
+
+          <!-- Success Stories Dropdown -->
+          <div class="relative group">
+            <button class="nav-link flex items-center gap-1">
+              Success Stories
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute top-full right-0 mt-2 w-56 bg-white/98 backdrop-blur-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border-2 border-slate-100 transform group-hover:translate-y-0 translate-y-2">
+              <NuxtLink to="/success-stories" class="dropdown-link">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-emerald to-brand-teal flex items-center justify-center text-white text-xl">⭐</div>
+                <div>
+                  <div class="font-semibold text-slate-900">Success Stories</div>
+                  <div class="text-xs text-slate-500">Student Testimonials</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink to="/gallery" class="dropdown-link">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-purple to-brand-blue flex items-center justify-center text-white text-xl">📸</div>
+                <div>
+                  <div class="font-semibold text-slate-900">Gallery</div>
+                  <div class="text-xs text-slate-500">Photos & Videos</div>
+                </div>
+              </NuxtLink>
+            </div>
+          </div>
+
           <NuxtLink to="/blog" class="nav-link group">
             <span>Blog</span>
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
-          <NuxtLink to="/contact" class="btn-primary text-sm">
+          <NuxtLink to="/contact" class="btn-primary px-6 py-2.5 text-base font-semibold">
             Apply Now
-            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </NuxtLink>
@@ -191,18 +238,50 @@
               <NuxtLink to="/countries/pakistan" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
                 🇵🇰 Pakistan
               </NuxtLink>
+              <NuxtLink to="/countries/saudi-arabia" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                🇸🇦 Saudi Arabia
+              </NuxtLink>
+              <NuxtLink to="/countries/yemen" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                🇾🇪 Yemen
+              </NuxtLink>
+              <NuxtLink to="/countries/iran" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                🇮🇷 Iran
+              </NuxtLink>
+              <NuxtLink to="/countries/india" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                🇮🇳 India
+              </NuxtLink>
+              <NuxtLink to="/countries/bangladesh" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                🇧🇩 Bangladesh
+              </NuxtLink>
             </div>
           </div>
 
           <NuxtLink to="/services" class="mobile-link" @click="mobileMenuOpen = false">🎯 Services</NuxtLink>
           <NuxtLink to="/scholarships" class="mobile-link" @click="mobileMenuOpen = false">💰 Scholarships</NuxtLink>
-          <NuxtLink to="/success-stories" class="mobile-link" @click="mobileMenuOpen = false">⭐ Success Stories</NuxtLink>
-          <NuxtLink to="/gallery" class="mobile-link" @click="mobileMenuOpen = false">📸 Gallery</NuxtLink>
+
+          <!-- Mobile Success Stories -->
+          <div>
+            <button @click="successOpen = !successOpen" class="mobile-link w-full flex items-center justify-between">
+              <span>⭐ Success Stories</span>
+              <svg class="w-4 h-4 transition-transform duration-300" :class="{'rotate-180': successOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div v-if="successOpen" class="pl-6 mt-3 flex flex-col gap-3 animate-fade-in-down">
+              <NuxtLink to="/success-stories" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                ⭐ Success Stories
+              </NuxtLink>
+              <NuxtLink to="/gallery" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
+                📸 Gallery
+              </NuxtLink>
+            </div>
+          </div>
+
           <NuxtLink to="/blog" class="mobile-link" @click="mobileMenuOpen = false">📝 Blog</NuxtLink>
 
-          <NuxtLink to="/contact" class="btn-primary w-full mt-4 justify-center" @click="mobileMenuOpen = false">
+          <NuxtLink to="/contact" class="btn-primary w-full mt-4 justify-center px-6 py-3 text-base font-semibold" @click="mobileMenuOpen = false">
             Apply Now
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </NuxtLink>
@@ -218,6 +297,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const mobileMenuOpen = ref(false)
 const programsOpen = ref(false)
 const countriesOpen = ref(false)
+const successOpen = ref(false)
 const scrolled = ref(false)
 
 const handleScroll = () => {
