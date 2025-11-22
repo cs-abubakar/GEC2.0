@@ -27,7 +27,7 @@
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
 
-          <!-- Programs Dropdown -->
+          <!-- Programs Mega Dropdown -->
           <div class="relative group">
             <button class="nav-link flex items-center gap-1">
               Programs
@@ -35,35 +35,101 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-72 bg-white rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-3 shadow-2xl border border-slate-200 transform group-hover:translate-y-0 translate-y-2">
-              <NuxtLink to="/programs/mbbs" class="dropdown-link">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white text-xl">🩺</div>
+            <div class="absolute top-full left-0 mt-2 w-[800px] bg-white rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-6 shadow-2xl border border-slate-200 transform group-hover:translate-y-0 translate-y-2">
+              <div class="grid grid-cols-4 gap-6">
+                <!-- Bachelor Programs -->
                 <div>
-                  <div class="font-semibold text-slate-900">MBBS</div>
-                  <div class="text-xs text-slate-500">Medical Degree in China</div>
+                  <div class="font-bold text-sm text-brand-blue mb-3 flex items-center gap-2">
+                    <span class="text-lg">🎓</span> Bachelor
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <NuxtLink to="/programs/mbbs" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>🩺</span> MBBS
+                    </NuxtLink>
+                    <NuxtLink to="/programs/bds" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>🦷</span> BDS
+                    </NuxtLink>
+                    <NuxtLink to="/programs/computer-science" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💻</span> Computer Science
+                    </NuxtLink>
+                    <NuxtLink to="/programs/engineering" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>⚙️</span> Engineering
+                    </NuxtLink>
+                    <NuxtLink to="/programs/business" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💼</span> Business
+                    </NuxtLink>
+                    <NuxtLink to="/programs/artificial-intelligence" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>🤖</span> Artificial Intelligence
+                    </NuxtLink>
+                    <NuxtLink to="/programs/nursing" class="text-sm text-slate-700 hover:text-brand-blue hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>👩‍⚕️</span> Nursing
+                    </NuxtLink>
+                  </div>
                 </div>
-              </NuxtLink>
-              <NuxtLink to="/programs/bds" class="dropdown-link">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-teal to-brand-emerald flex items-center justify-center text-white text-xl">🦷</div>
+
+                <!-- Master Programs -->
                 <div>
-                  <div class="font-semibold text-slate-900">BDS</div>
-                  <div class="text-xs text-slate-500">Dental Surgery</div>
+                  <div class="font-bold text-sm text-brand-purple mb-3 flex items-center gap-2">
+                    <span class="text-lg">📚</span> Master's
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <NuxtLink to="/programs/mba" class="text-sm text-slate-700 hover:text-brand-purple hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💼</span> MBA
+                    </NuxtLink>
+                    <NuxtLink to="/programs/masters-cs" class="text-sm text-slate-700 hover:text-brand-purple hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💻</span> M.Sc Computer Science
+                    </NuxtLink>
+                    <NuxtLink to="/programs/masters-engineering" class="text-sm text-slate-700 hover:text-brand-purple hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>⚙️</span> M.Eng Engineering
+                    </NuxtLink>
+                    <NuxtLink to="/programs/masters-ir" class="text-sm text-slate-700 hover:text-brand-purple hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>🌐</span> M.A Int'l Relations
+                    </NuxtLink>
+                  </div>
                 </div>
-              </NuxtLink>
-              <NuxtLink to="/programs/computer-science" class="dropdown-link">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-purple to-brand-blue flex items-center justify-center text-white text-xl">💻</div>
+
+                <!-- PhD Programs -->
                 <div>
-                  <div class="font-semibold text-slate-900">Computer Science</div>
-                  <div class="text-xs text-slate-500">Tech & Programming</div>
+                  <div class="font-bold text-sm text-brand-emerald mb-3 flex items-center gap-2">
+                    <span class="text-lg">🔬</span> PhD
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <NuxtLink to="/programs/phd-cs" class="text-sm text-slate-700 hover:text-brand-emerald hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💻</span> PhD Computer Science
+                    </NuxtLink>
+                    <NuxtLink to="/programs/phd-engineering" class="text-sm text-slate-700 hover:text-brand-emerald hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>⚙️</span> PhD Engineering
+                    </NuxtLink>
+                    <NuxtLink to="/programs/phd-medicine" class="text-sm text-slate-700 hover:text-brand-emerald hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>🩺</span> PhD Medicine
+                    </NuxtLink>
+                    <NuxtLink to="/programs/phd-business" class="text-sm text-slate-700 hover:text-brand-emerald hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💼</span> PhD Business
+                    </NuxtLink>
+                  </div>
                 </div>
-              </NuxtLink>
-              <NuxtLink to="/programs/engineering" class="dropdown-link">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-orange to-brand-amber flex items-center justify-center text-white text-xl">⚙️</div>
+
+                <!-- Short Courses -->
                 <div>
-                  <div class="font-semibold text-slate-900">Engineering</div>
-                  <div class="text-xs text-slate-500">Various Fields</div>
+                  <div class="font-bold text-sm text-brand-amber mb-3 flex items-center gap-2">
+                    <span class="text-lg">⚡</span> Short Courses
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <NuxtLink to="/programs/language" class="text-sm text-slate-700 hover:text-brand-amber hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>📚</span> Chinese Language (1Y)
+                    </NuxtLink>
+                    <NuxtLink to="/programs/language-6months" class="text-sm text-slate-700 hover:text-brand-amber hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>📖</span> Chinese Language (6M)
+                    </NuxtLink>
+                    <NuxtLink to="/programs/business-chinese" class="text-sm text-slate-700 hover:text-brand-amber hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>💼</span> Business Chinese
+                    </NuxtLink>
+                    <NuxtLink to="/programs/summer-programs" class="text-sm text-slate-700 hover:text-brand-amber hover:translate-x-1 transition-all flex items-center gap-2">
+                      <span>☀️</span> Summer Programs
+                    </NuxtLink>
+                  </div>
                 </div>
-              </NuxtLink>
+              </div>
             </div>
           </div>
 
@@ -216,19 +282,73 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="programsOpen" class="pl-6 mt-3 flex flex-col gap-3 animate-fade-in-down">
-              <NuxtLink to="/programs/mbbs" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
-                <span>🩺</span> MBBS
-              </NuxtLink>
-              <NuxtLink to="/programs/bds" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
-                <span>🦷</span> BDS
-              </NuxtLink>
-              <NuxtLink to="/programs/computer-science" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
-                <span>💻</span> Computer Science
-              </NuxtLink>
-              <NuxtLink to="/programs/engineering" class="mobile-link text-sm flex items-center gap-2" @click="mobileMenuOpen = false">
-                <span>⚙️</span> Engineering
-              </NuxtLink>
+            <div v-if="programsOpen" class="pl-4 mt-3 flex flex-col gap-3 animate-fade-in-down">
+              <!-- Bachelor -->
+              <div>
+                <button @click="bachelorOpen = !bachelorOpen" class="mobile-link text-sm w-full flex items-center justify-between font-semibold text-brand-blue">
+                  <span>🎓 Bachelor</span>
+                  <svg class="w-3 h-3" :class="{'rotate-180': bachelorOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div v-if="bachelorOpen" class="pl-4 mt-2 flex flex-col gap-2">
+                  <NuxtLink to="/programs/mbbs" class="mobile-link text-xs" @click="mobileMenuOpen = false">🩺 MBBS</NuxtLink>
+                  <NuxtLink to="/programs/bds" class="mobile-link text-xs" @click="mobileMenuOpen = false">🦷 BDS</NuxtLink>
+                  <NuxtLink to="/programs/computer-science" class="mobile-link text-xs" @click="mobileMenuOpen = false">💻 Computer Science</NuxtLink>
+                  <NuxtLink to="/programs/engineering" class="mobile-link text-xs" @click="mobileMenuOpen = false">⚙️ Engineering</NuxtLink>
+                  <NuxtLink to="/programs/business" class="mobile-link text-xs" @click="mobileMenuOpen = false">💼 Business</NuxtLink>
+                  <NuxtLink to="/programs/artificial-intelligence" class="mobile-link text-xs" @click="mobileMenuOpen = false">🤖 AI</NuxtLink>
+                  <NuxtLink to="/programs/nursing" class="mobile-link text-xs" @click="mobileMenuOpen = false">👩‍⚕️ Nursing</NuxtLink>
+                </div>
+              </div>
+
+              <!-- Master -->
+              <div>
+                <button @click="mastersOpen = !mastersOpen" class="mobile-link text-sm w-full flex items-center justify-between font-semibold text-brand-purple">
+                  <span>📚 Master's</span>
+                  <svg class="w-3 h-3" :class="{'rotate-180': mastersOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div v-if="mastersOpen" class="pl-4 mt-2 flex flex-col gap-2">
+                  <NuxtLink to="/programs/mba" class="mobile-link text-xs" @click="mobileMenuOpen = false">💼 MBA</NuxtLink>
+                  <NuxtLink to="/programs/masters-cs" class="mobile-link text-xs" @click="mobileMenuOpen = false">💻 M.Sc CS</NuxtLink>
+                  <NuxtLink to="/programs/masters-engineering" class="mobile-link text-xs" @click="mobileMenuOpen = false">⚙️ M.Eng</NuxtLink>
+                  <NuxtLink to="/programs/masters-ir" class="mobile-link text-xs" @click="mobileMenuOpen = false">🌐 M.A IR</NuxtLink>
+                </div>
+              </div>
+
+              <!-- PhD -->
+              <div>
+                <button @click="phdOpen = !phdOpen" class="mobile-link text-sm w-full flex items-center justify-between font-semibold text-brand-emerald">
+                  <span>🔬 PhD</span>
+                  <svg class="w-3 h-3" :class="{'rotate-180': phdOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div v-if="phdOpen" class="pl-4 mt-2 flex flex-col gap-2">
+                  <NuxtLink to="/programs/phd-cs" class="mobile-link text-xs" @click="mobileMenuOpen = false">💻 PhD CS</NuxtLink>
+                  <NuxtLink to="/programs/phd-engineering" class="mobile-link text-xs" @click="mobileMenuOpen = false">⚙️ PhD Engineering</NuxtLink>
+                  <NuxtLink to="/programs/phd-medicine" class="mobile-link text-xs" @click="mobileMenuOpen = false">🩺 PhD Medicine</NuxtLink>
+                  <NuxtLink to="/programs/phd-business" class="mobile-link text-xs" @click="mobileMenuOpen = false">💼 PhD Business</NuxtLink>
+                </div>
+              </div>
+
+              <!-- Short Courses -->
+              <div>
+                <button @click="shortCoursesOpen = !shortCoursesOpen" class="mobile-link text-sm w-full flex items-center justify-between font-semibold text-brand-amber">
+                  <span>⚡ Short Courses</span>
+                  <svg class="w-3 h-3" :class="{'rotate-180': shortCoursesOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div v-if="shortCoursesOpen" class="pl-4 mt-2 flex flex-col gap-2">
+                  <NuxtLink to="/programs/language" class="mobile-link text-xs" @click="mobileMenuOpen = false">📚 Chinese Language (1Y)</NuxtLink>
+                  <NuxtLink to="/programs/language-6months" class="mobile-link text-xs" @click="mobileMenuOpen = false">📖 Chinese Language (6M)</NuxtLink>
+                  <NuxtLink to="/programs/business-chinese" class="mobile-link text-xs" @click="mobileMenuOpen = false">💼 Business Chinese</NuxtLink>
+                  <NuxtLink to="/programs/summer-programs" class="mobile-link text-xs" @click="mobileMenuOpen = false">☀️ Summer Programs</NuxtLink>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -303,6 +423,10 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const mobileMenuOpen = ref(false)
 const programsOpen = ref(false)
+const bachelorOpen = ref(false)
+const mastersOpen = ref(false)
+const phdOpen = ref(false)
+const shortCoursesOpen = ref(false)
 const countriesOpen = ref(false)
 const successOpen = ref(false)
 const scrolled = ref(false)

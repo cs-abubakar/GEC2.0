@@ -6,7 +6,6 @@
     </main>
     <Footer />
     <WhatsAppFloat />
-    <FloatingApplyButton />
   </div>
 </template>
 
