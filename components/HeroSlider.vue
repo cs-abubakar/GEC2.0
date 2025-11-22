@@ -11,6 +11,10 @@
         ]"
       >
         <!-- Background Image with Overlay -->
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          :style="{ backgroundImage: `url(${slide.backgroundImage})` }"
+        ></div>
         <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80"></div>
         <div class="absolute inset-0 bg-black/20"></div>
 
@@ -85,22 +89,26 @@ const slides = [
   {
     badge: '🎓 Study in China',
     title: 'Your Gateway to World-Class Medical Education',
-    description: 'Join 5000+ successful students pursuing MBBS and other programs in top Chinese universities with 95% visa success rate.'
+    description: 'Join 5000+ successful students pursuing MBBS and other programs in top Chinese universities with 95% visa success rate.',
+    backgroundImage: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2000'
   },
   {
     badge: '🏥 WHO Recognized',
     title: 'PMC & ECFMG Recognized Medical Programs',
-    description: 'Study MBBS in China with internationally recognized degrees. Return home ready to practice medicine worldwide.'
+    description: 'Study MBBS in China with internationally recognized degrees. Return home ready to practice medicine worldwide.',
+    backgroundImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000'
   },
   {
     badge: '🌍 Global Opportunities',
     title: 'Build Your Future in China',
-    description: 'From Engineering to AI, Medicine to Business - discover programs that transform careers and change lives.'
+    description: 'From Engineering to AI, Medicine to Business - discover programs that transform careers and change lives.',
+    backgroundImage: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000'
   },
   {
     badge: '🎯 Expert Guidance',
     title: '50+ Education Consultants Supporting You',
-    description: 'From application to graduation, we provide 24/7 support. Based in China, we understand your journey.'
+    description: 'From application to graduation, we provide 24/7 support. Based in China, we understand your journey.',
+    backgroundImage: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000'
   }
 ]
 

@@ -160,6 +160,14 @@
             <span>Blog</span>
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
+
+          <!-- Apply Now Button -->
+          <NuxtLink to="/contact" class="bg-accent hover:bg-accent-hover text-white font-bold px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2">
+            Apply Now
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </NuxtLink>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -276,6 +284,14 @@
           </div>
 
           <NuxtLink to="/blog" class="mobile-link" @click="mobileMenuOpen = false">📝 Blog</NuxtLink>
+
+          <!-- Apply Now Button for Mobile -->
+          <NuxtLink to="/contact" class="bg-accent hover:bg-accent-hover text-white font-bold px-6 py-3 rounded-full transition-all duration-300 shadow-lg flex items-center justify-center gap-2 mt-4" @click="mobileMenuOpen = false">
+            Apply Now
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </NuxtLink>
         </div>
       </div>
     </nav>

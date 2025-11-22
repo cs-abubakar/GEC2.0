@@ -275,18 +275,85 @@
             </div>
           </div>
 
-          <!-- Silk Road Scholarship -->
-          <div class="scholarship-card bg-gradient-to-r from-accent-peach/80 to-primary-green text-white p-8 md:p-12 rounded-2xl shadow-xl">
-            <h3 class="text-3xl font-bold mb-4">Silk Road Scholarship</h3>
+          <!-- Belt and Road Scholarship -->
+          <div class="scholarship-card bg-gradient-to-r from-accent-purple/80 to-primary-blue text-white p-8 md:p-12 rounded-2xl shadow-xl">
+            <h3 class="text-3xl font-bold mb-4">Belt and Road Scholarship</h3>
             <p class="text-xl text-gray-100 mb-6">
-              For students from Belt & Road Initiative countries (including Pakistan)
+              For students from Belt & Road Initiative countries (including Pakistan, Bangladesh, India, Saudi Arabia)
             </p>
 
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 class="text-xl font-bold mb-3 text-accent-yellow">What It Covers</h4>
                 <ul class="space-y-2">
-                  <li>✓ Full or partial tuition fees</li>
+                  <li>✓ Full tuition waiver</li>
+                  <li>✓ Monthly stipend CNY 2,500-3,000</li>
+                  <li>✓ Free accommodation</li>
+                  <li>✓ Medical insurance</li>
+                  <li>✓ One-time settlement allowance</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-3 text-accent-yellow">Focus Areas</h4>
+                <ul class="space-y-2">
+                  <li>• Engineering & Technology</li>
+                  <li>• Economics & Trade</li>
+                  <li>• Infrastructure Development</li>
+                  <li>• International Relations</li>
+                  <li>• Medicine & Health Sciences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ANSO Scholarship -->
+          <div class="scholarship-card bg-gradient-to-r from-primary-green to-accent-yellow/80 text-white p-8 md:p-12 rounded-2xl shadow-xl">
+            <div class="inline-block bg-white text-primary-green px-4 py-2 rounded-full text-sm font-bold mb-4">
+              FOR DEVELOPING COUNTRIES
+            </div>
+            <h3 class="text-3xl font-bold mb-4">ANSO Scholarship for Young Talents</h3>
+            <p class="text-xl text-gray-100 mb-6">
+              Alliance of International Science Organizations scholarship for PhD and postdoctoral research
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-xl font-bold mb-3">Coverage</h4>
+                <ul class="space-y-2">
+                  <li>✓ Full tuition waiver</li>
+                  <li>✓ Monthly stipend CNY 3,500-4,000</li>
+                  <li>✓ Research funding</li>
+                  <li>✓ Free accommodation</li>
+                  <li>✓ Medical insurance</li>
+                  <li>✓ Conference travel allowance</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-3">Eligibility</h4>
+                <ul class="space-y-2">
+                  <li>• From developing countries</li>
+                  <li>• Master's degree holder (for PhD)</li>
+                  <li>• Under 40 years old</li>
+                  <li>• Strong research background</li>
+                  <li>• Focus on science & technology</li>
+                  <li>• English proficiency</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Silk Road Scholarship -->
+          <div class="scholarship-card bg-gradient-to-r from-accent-peach/80 to-primary-green text-white p-8 md:p-12 rounded-2xl shadow-xl">
+            <h3 class="text-3xl font-bold mb-4">Silk Road Scholarship</h3>
+            <p class="text-xl text-gray-100 mb-6">
+              Regional scholarship for students along the historic Silk Road trade route
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-xl font-bold mb-3 text-accent-yellow">What It Covers</h4>
+                <ul class="space-y-2">
+                  <li>✓ Partial to full tuition fees</li>
                   <li>✓ Living expenses allowance</li>
                   <li>✓ Accommodation support</li>
                   <li>✓ Medical insurance</li>
@@ -295,11 +362,10 @@
               <div>
                 <h4 class="text-xl font-bold mb-3 text-accent-yellow">Focus Areas</h4>
                 <ul class="space-y-2">
-                  <li>• Engineering & Technology</li>
-                  <li>• Economics & Trade</li>
-                  <li>• Agriculture</li>
-                  <li>• Education</li>
-                  <li>• Medicine</li>
+                  <li>• Chinese Language & Culture</li>
+                  <li>• History & Archaeology</li>
+                  <li>• International Trade</li>
+                  <li>• Cultural Studies</li>
                 </ul>
               </div>
             </div>
@@ -333,6 +399,183 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scholarship Comparison Table -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4 font-display">Quick Scholarship Comparison</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Compare different scholarships at a glance to find the best fit for you
+          </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto overflow-x-auto">
+          <table class="w-full bg-white rounded-2xl shadow-lg">
+            <thead>
+              <tr class="bg-gradient-to-r from-primary-blue to-primary-green text-white">
+                <th class="px-6 py-4 text-left font-bold">Scholarship</th>
+                <th class="px-6 py-4 text-left font-bold">Tuition Coverage</th>
+                <th class="px-6 py-4 text-left font-bold">Monthly Stipend</th>
+                <th class="px-6 py-4 text-left font-bold">Accommodation</th>
+                <th class="px-6 py-4 text-left font-bold">Competitiveness</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-blue">Chinese Government (CSC)</td>
+                <td class="px-6 py-4">100% Full</td>
+                <td class="px-6 py-4">CNY 2,500-3,500</td>
+                <td class="px-6 py-4">✓ Free</td>
+                <td class="px-6 py-4"><span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Very High</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-green">MOFCOM</td>
+                <td class="px-6 py-4">100% Full</td>
+                <td class="px-6 py-4">CNY 3,000</td>
+                <td class="px-6 py-4">✓ Free</td>
+                <td class="px-6 py-4"><span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">High</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-blue">Belt and Road</td>
+                <td class="px-6 py-4">100% Full</td>
+                <td class="px-6 py-4">CNY 2,500-3,000</td>
+                <td class="px-6 py-4">✓ Free</td>
+                <td class="px-6 py-4"><span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">High</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-green">ANSO</td>
+                <td class="px-6 py-4">100% Full</td>
+                <td class="px-6 py-4">CNY 3,500-4,000</td>
+                <td class="px-6 py-4">✓ Free</td>
+                <td class="px-6 py-4"><span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">High</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-blue">Confucius Institute</td>
+                <td class="px-6 py-4">Full or Partial</td>
+                <td class="px-6 py-4">CNY 2,500</td>
+                <td class="px-6 py-4">✓ Free</td>
+                <td class="px-6 py-4"><span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Medium</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-green">Provincial Gov.</td>
+                <td class="px-6 py-4">50-100%</td>
+                <td class="px-6 py-4">Varies</td>
+                <td class="px-6 py-4">Sometimes</td>
+                <td class="px-6 py-4"><span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Medium</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-blue">University</td>
+                <td class="px-6 py-4">30-100%</td>
+                <td class="px-6 py-4">Varies</td>
+                <td class="px-6 py-4">Sometimes</td>
+                <td class="px-6 py-4"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Low-Medium</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-semibold text-primary-green">Silk Road</td>
+                <td class="px-6 py-4">Partial to Full</td>
+                <td class="px-6 py-4">Varies</td>
+                <td class="px-6 py-4">✓ Usually</td>
+                <td class="px-6 py-4"><span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Medium</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- How GEC Helps -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-blue/10 text-primary-blue font-semibold mb-4">
+              <span class="text-xl">🤝</span>
+              <span>Why Choose GEC</span>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 font-display text-primary-blue">How We Help You Win Scholarships</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              With 8+ years of experience, we've helped 5000+ students secure millions in scholarship funding
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 p-8 rounded-2xl border-2 border-primary-blue/20 hover:border-primary-blue/40 transition-all">
+              <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">📋</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-primary-blue">Eligibility Assessment</h3>
+              <p class="text-gray-600">
+                We analyze your academic profile and match you with scholarships you're most likely to win based on 8+ years of experience
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary-green/5 to-accent-yellow/5 p-8 rounded-2xl border-2 border-primary-green/20 hover:border-primary-green/40 transition-all">
+              <div class="w-16 h-16 bg-primary-green/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">📝</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-primary-green">Application Excellence</h3>
+              <p class="text-gray-600">
+                We help craft compelling study plans, personal statements, and research proposals that stand out to scholarship committees
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-accent-yellow/5 to-accent-orange/5 p-8 rounded-2xl border-2 border-accent-yellow/20 hover:border-accent-yellow/40 transition-all">
+              <div class="w-16 h-16 bg-accent-yellow/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">🎯</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-accent-orange">Strategic Application</h3>
+              <p class="text-gray-600">
+                We apply to multiple scholarships simultaneously, maximizing your chances of receiving at least one offer
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-accent-purple/5 to-primary-blue/5 p-8 rounded-2xl border-2 border-accent-purple/20 hover:border-accent-purple/40 transition-all">
+              <div class="w-16 h-16 bg-accent-purple/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">⏰</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-accent-purple">Deadline Management</h3>
+              <p class="text-gray-600">
+                We track all scholarship deadlines and ensure your applications are submitted early when competition is lower
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary-blue/5 to-accent-purple/5 p-8 rounded-2xl border-2 border-primary-blue/20 hover:border-primary-blue/40 transition-all">
+              <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">✅</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-primary-blue">Document Verification</h3>
+              <p class="text-gray-600">
+                We ensure all your documents meet requirements and are properly formatted, translated, and notarized
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-primary-green/5 to-primary-blue/5 p-8 rounded-2xl border-2 border-primary-green/20 hover:border-primary-green/40 transition-all">
+              <div class="w-16 h-16 bg-primary-green/20 rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl">🎓</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-primary-green">Success Stories</h3>
+              <p class="text-gray-600">
+                95% of our students receive some form of scholarship - whether full or partial. Our track record speaks for itself
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-primary-blue to-primary-green text-white p-8 md:p-12 rounded-2xl text-center">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Ready to Check Your Scholarship Eligibility?</h3>
+            <p class="text-xl mb-8 text-gray-100">
+              Get a FREE scholarship assessment from our expert consultants. We'll tell you exactly which scholarships you qualify for.
+            </p>
+            <NuxtLink to="/contact" class="inline-flex items-center gap-2 bg-accent-yellow hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl">
+              Check Your Eligibility Now
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -438,10 +681,10 @@
           Let us help you secure scholarship funding for your education in China. Free assessment and guidance!
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-          <NuxtLink to="/contact" class="bg-accent-yellow text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-all">
+          <NuxtLink to="/contact" class="bg-accent-yellow text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-lg">
             Get Free Assessment
           </NuxtLink>
-          <a href="https://wa.me/8618672301888" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all">
+          <a href="https://wa.me/8618672301888" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all hover:scale-105">
             WhatsApp: +86 186 7230 1888
           </a>
         </div>

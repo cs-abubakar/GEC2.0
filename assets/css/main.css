@@ -26,6 +26,15 @@
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-out;
   }
 
+  /* Ensure ALL buttons and links that look like buttons are rounded */
+  button,
+  .button,
+  a.btn,
+  .cta-button,
+  [class*="btn-"] {
+    @apply rounded-full;
+  }
+
   .btn-primary {
     @apply bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-lg transition-all duration-300 ease-out;
   }

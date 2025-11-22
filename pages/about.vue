@@ -6,7 +6,7 @@
       <div class="container-custom relative z-10 text-white">
         <h1 class="mb-6 text-white">Our Story: Built on Trust, Driven by Your Dreams</h1>
         <p class="text-xl max-w-3xl">
-          From humble beginnings to guiding 500+ students to success - this is the story of GEC
+          From humble beginnings to guiding 5000+ students to success - this is the story of GEC
         </p>
       </div>
     </section>
@@ -61,7 +61,7 @@
           </div>
 
           <p>
-            Today, GEC has guided 500+ students to top universities in China. But more importantly, we've created 500+ success stories, 500+ families who trust us, and 500+ young professionals who are now living their dreams—many of them doctors, engineers, and business leaders making a difference in the world.
+            Today, GEC has guided 5000+ students to top universities in China. But more importantly, we've created 5000+ success stories, 5000+ families who trust us, and 5000+ young professionals who are now living their dreams—many of them doctors, engineers, and business leaders making a difference in the world.
           </p>
 
           <p class="text-xl font-semibold text-primary-blue">
@@ -211,7 +211,7 @@
                 <div class="text-sm text-gray-600">Years Established</div>
               </div>
               <div>
-                <div class="text-3xl font-bold text-primary-blue">500+</div>
+                <div class="text-3xl font-bold text-primary-blue">5000+</div>
                 <div class="text-sm text-gray-600">Students Guided</div>
               </div>
             </div>
@@ -251,7 +251,7 @@
       <div class="container-custom text-center">
         <h2 class="mb-6 text-white">Become Part of Our Story</h2>
         <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-          Join 500+ students who trusted GEC with their dreams. Let's write your success story together.
+          Join 5000+ students who trusted GEC with their dreams. Let's write your success story together.
         </p>
         <a href="https://wa.me/86XXXXXXXXXX?text=I%20want%20to%20learn%20more%20about%20GEC" target="_blank" class="btn-whatsapp">
           Connect With Us Today
@@ -265,7 +265,7 @@
 useHead({
   title: 'About Us - Our Story Built on Trust | Global Educational Consultants',
   meta: [
-    { name: 'description', content: 'Discover the story of GEC - founded by doctors who studied in China, now helping 500+ students achieve their dreams. With offices in different countries and 50+ dedicated professionals.' }
+    { name: 'description', content: 'Discover the story of GEC - founded by doctors who studied in China, now helping 5000+ students achieve their dreams. With offices in different countries and 50+ dedicated professionals.' }
   ]
 })
 
@@ -278,7 +278,7 @@ const milestones = [
   { year: '2021', title: '200+ Students Milestone', description: 'Crossed 200 successful placements. Launched HSK preparation program.' },
   { year: '2022', title: 'Partnership Expansion', description: 'Established partnerships with 15+ top Chinese universities.' },
   { year: '2023', title: '400+ Students', description: 'Became one of the most trusted names for China education consultancy.' },
-  { year: '2024', title: '500+ Success Stories', description: 'Reached 500+ successful student placements. Team expanded to 50+ professionals.' },
+  { year: '2024', title: '5000+ Success Stories', description: 'Reached 5000+ successful student placements. Team expanded to 50+ professionals.' },
   { year: '2025', title: 'Global Expansion', description: 'Expanding services to more countries while maintaining our core value of genuine care.' }
 ]
 </script>
