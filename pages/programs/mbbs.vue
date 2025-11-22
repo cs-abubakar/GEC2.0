@@ -15,13 +15,13 @@
             <span class="font-semibold">Language:</span> English
           </div>
           <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
-            <span class="font-semibold">Recognition:</span> WHO/PMDC
+            <span class="font-semibold">Recognition:</span> WHO/PMC/ECFMG
           </div>
           <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
             <span class="font-semibold">Visa Success:</span> 95%
           </div>
         </div>
-        <a href="https://wa.me/86XXXXXXXXXX?text=I'm%20interested%20in%20MBBS%20program" target="_blank" class="btn-whatsapp inline-flex">
+        <a href="https://wa.me/923114999954?text=I'm%20interested%20in%20MBBS%20program" target="_blank" class="btn-whatsapp inline-flex">
           Get Started Now
         </a>
       </div>
@@ -47,8 +47,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-semibold mb-1">WHO & PMDC Recognized</h4>
-                  <p class="text-gray-600">Practice globally after passing licensing exams</p>
+                  <h4 class="font-semibold mb-1">WHO, PMC & ECFMG Recognized</h4>
+                  <p class="text-gray-600">Practice globally - eligible for USMLE, PLAB, FMGE & PMC exams</p>
                 </div>
               </div>
               <div class="flex gap-4">
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                   <h4 class="font-semibold mb-1">English-Medium Instruction</h4>
-                  <p class="text-gray-600">No Chinese language barrier for admission</p>
+                  <p class="text-gray-600">No Chinese required for admission. HSK 4 needed before clinical rotations (Year 3)</p>
                 </div>
               </div>
               <div class="flex gap-4">
@@ -156,87 +156,141 @@
       </div>
     </section>
 
-    <!-- Top Universities -->
+    <!-- MOE vs Non-MOE Explanation -->
     <section class="section bg-white">
       <div class="container-custom">
-        <h2 class="text-center mb-4">Top Medical Universities in China</h2>
+        <h2 class="text-center mb-12">Understanding MOE vs Non-MOE Universities</h2>
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+          <div class="card p-8 border-2 border-primary-blue">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-primary-blue rounded-full flex items-center justify-center text-white text-2xl">✓</div>
+              <h3 class="text-2xl font-bold text-primary-blue">MOE Listed Universities</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              MOE (Ministry of Education of China) listed universities are officially recognized by the Chinese government and international medical councils for their MBBS programs.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Eligible for ECFMG certification (required for USMLE)</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>WHO recognized and PMC listed</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Accepted for medical licensure in most countries</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Higher international standards and quality assurance</span>
+              </div>
+            </div>
+          </div>
+          <div class="card p-8 border-2 border-primary-green">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center text-white text-2xl">⚠</div>
+              <h3 class="text-2xl font-bold text-primary-green">Non-MOE Universities</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              Non-MOE universities may offer MBBS programs but are not officially listed by the Chinese Ministry of Education for international medical education.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span>NOT eligible for ECFMG certification</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span>May face recognition issues in some countries</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span>Limited career opportunities internationally</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <span>Lower international credibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-accent-yellow/20 border-l-4 border-accent-yellow p-6 rounded-lg">
+          <div class="flex gap-3">
+            <svg class="w-6 h-6 text-accent-yellow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <div>
+              <h4 class="font-semibold mb-2">Our Recommendation</h4>
+              <p class="text-gray-700">
+                GEC only partners with <strong>MOE-listed, WHO-recognized universities</strong> to ensure your degree is globally accepted. All 14 universities we recommend below are MOE-listed and ECFMG-eligible, giving you the best chance for a successful international medical career.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Universities -->
+    <section class="section bg-light-grey">
+      <div class="container-custom">
+        <h2 class="text-center mb-4">Top 14 Medical Universities (All MOE-Listed)</h2>
         <p class="text-center text-body-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-          All universities we work with are WHO-recognized and accepted by PMDC, USMLE, PLAB, and other international medical councils
+          All universities below are WHO-recognized, MOE-listed, ECFMG-eligible, and accepted by PMC, USMLE, PLAB, and other international medical councils
         </p>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="card p-8">
-            <h3 class="text-xl font-semibold mb-4">Yangtze University</h3>
-            <div class="flex gap-2 mb-4">
-              <span class="text-xs bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full">WHO Listed</span>
-              <span class="text-xs bg-primary-green/10 text-primary-green px-3 py-1 rounded-full">PMDC Recognized</span>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div v-for="university in universities" :key="university.name" class="card p-6">
+            <h3 class="text-lg font-bold mb-2">{{ university.name }}</h3>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="text-xs bg-primary-blue/10 text-primary-blue px-2 py-1 rounded-full">MOE Listed</span>
+              <span class="text-xs bg-primary-green/10 text-primary-green px-2 py-1 rounded-full">ECFMG Eligible</span>
             </div>
-            <p class="text-gray-700 mb-4">
-              Located in Jingzhou, Hubei Province. One of the most popular universities for international medical students with over 2,000 students from 60+ countries.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li>✓ Modern teaching hospital with 2,000+ beds</li>
-              <li>✓ State-of-the-art anatomy and simulation labs</li>
-              <li>✓ International student dormitories</li>
-              <li>✓ English-speaking support staff</li>
-              <li>✓ HSK preparation included</li>
-            </ul>
-          </div>
-          <div class="card p-8">
-            <h3 class="text-xl font-semibold mb-4">China Medical University</h3>
-            <div class="flex gap-2 mb-4">
-              <span class="text-xs bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full">WHO Listed</span>
-              <span class="text-xs bg-primary-green/10 text-primary-green px-3 py-1 rounded-full">PMDC Recognized</span>
+            <div class="text-sm text-gray-600 mb-3">
+              <div class="flex items-center gap-2 mb-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="font-medium">{{ university.location }}</span>
+              </div>
             </div>
-            <p class="text-gray-700 mb-4">
-              Based in Shenyang, Liaoning Province. Renowned for its medical research and international programs with students from over 100 countries.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li>✓ Top-ranked medical university in Northeast China</li>
-              <li>✓ Advanced medical research facilities</li>
-              <li>✓ Multiple teaching hospitals</li>
-              <li>✓ Strong international alumni network</li>
-              <li>✓ Scholarship opportunities available</li>
-            </ul>
-          </div>
-          <div class="card p-8">
-            <h3 class="text-xl font-semibold mb-4">Jiangsu University</h3>
-            <div class="flex gap-2 mb-4">
-              <span class="text-xs bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full">WHO Listed</span>
-              <span class="text-xs bg-primary-green/10 text-primary-green px-3 py-1 rounded-full">PMDC Recognized</span>
-            </div>
-            <p class="text-gray-700 mb-4">
-              Situated in Zhenjiang, Jiangsu Province. Known for excellent clinical training and modern facilities with a diverse international student body.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li>✓ Beautiful campus near Shanghai</li>
-              <li>✓ Comprehensive medical library</li>
-              <li>✓ Active student organizations</li>
-              <li>✓ Sports and recreational facilities</li>
-              <li>✓ Career guidance and placement support</li>
-            </ul>
-          </div>
-          <div class="card p-8">
-            <h3 class="text-xl font-semibold mb-4">Dalian Medical University</h3>
-            <div class="flex gap-2 mb-4">
-              <span class="text-xs bg-primary-blue/10 text-primary-blue px-3 py-1 rounded-full">WHO Listed</span>
-              <span class="text-xs bg-primary-green/10 text-primary-green px-3 py-1 rounded-full">PMDC Recognized</span>
-            </div>
-            <p class="text-gray-700 mb-4">
-              Located in Dalian, Liaoning Province. A coastal city university offering excellent medical education with strong emphasis on practical skills.
-            </p>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li>✓ Established international medical program</li>
-              <li>✓ Modern clinical skills center</li>
-              <li>✓ Comfortable living environment</li>
-              <li>✓ Active cultural exchange programs</li>
-              <li>✓ Strong focus on clinical competency</li>
+            <a :href="university.website" target="_blank" class="text-sm text-primary-blue hover:text-primary-green flex items-center gap-1 mb-3">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Visit Website
+            </a>
+            <ul class="space-y-1.5 text-sm text-gray-600">
+              <li v-for="feature in university.features" :key="feature" class="flex items-start gap-2">
+                <svg class="w-4 h-4 text-primary-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{{ feature }}</span>
+              </li>
             </ul>
           </div>
         </div>
         <div class="text-center mt-8">
-          <p class="text-gray-600 mb-4">And 10+ more WHO-recognized medical universities</p>
-          <a href="https://wa.me/86XXXXXXXXXX?text=I%20want%20to%20know%20more%20about%20medical%20universities" target="_blank" class="btn-secondary">
-            Explore All Universities
+          <p class="text-gray-600 mb-4">All universities are MOE-listed, WHO-recognized, and ECFMG-eligible</p>
+          <a href="https://wa.me/923114999954?text=I%20want%20to%20know%20more%20about%20medical%20universities" target="_blank" class="btn-secondary">
+            Get Personalized University Recommendations
           </a>
         </div>
       </div>
@@ -399,7 +453,7 @@
           Join 300+ students who chose China for their MBBS degree. Your dream of becoming a doctor starts here.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://wa.me/86XXXXXXXXXX?text=I%20want%20to%20apply%20for%20MBBS%20in%20China" target="_blank" class="btn-whatsapp">
+          <a href="https://wa.me/923114999954?text=I%20want%20to%20apply%20for%20MBBS%20in%20China" target="_blank" class="btn-whatsapp">
             Apply Now via WhatsApp
           </a>
           <NuxtLink to="/contact" class="btn-secondary bg-white text-primary-blue">
@@ -502,6 +556,93 @@ const successStories = [
   }
 ]
 
+const universities = [
+  {
+    name: 'Yangtze University',
+    location: 'Jingzhou, Hubei Province',
+    website: 'http://www.yangtzeu.edu.cn',
+    features: ['2000+ international students', 'Modern teaching hospitals', 'English-taught MBBS']
+  },
+  {
+    name: 'Binzhou Medical University',
+    location: 'Yantai, Shandong Province',
+    website: 'http://www.bzmc.edu.cn',
+    features: ['Coastal city location', 'Affordable tuition fees', 'Excellent clinical training']
+  },
+  {
+    name: 'China Three Gorges University',
+    location: 'Yichang, Hubei Province',
+    website: 'http://www.ctgu.edu.cn',
+    features: ['Beautiful campus', 'Modern facilities', 'Growing international program']
+  },
+  {
+    name: 'China Medical University',
+    location: 'Shenyang, Liaoning Province',
+    website: 'http://www.cmu.edu.cn',
+    features: ['Top-ranked university', '100+ countries represented', 'Research excellence']
+  },
+  {
+    name: 'Jiangsu University',
+    location: 'Zhenjiang, Jiangsu Province',
+    website: 'http://www.ujs.edu.cn',
+    features: ['Near Shanghai', 'Comprehensive facilities', 'Active student life']
+  },
+  {
+    name: 'Dalian Medical University',
+    location: 'Dalian, Liaoning Province',
+    website: 'http://www.dmu.edu.cn',
+    features: ['Coastal city', 'Established program', 'Strong clinical focus']
+  },
+  {
+    name: 'Xuzhou Medical University',
+    location: 'Xuzhou, Jiangsu Province',
+    website: 'http://www.xzhmu.edu.cn',
+    features: ['Quality education', 'Affordable living costs', 'Modern campus']
+  },
+  {
+    name: 'Ningbo University',
+    location: 'Ningbo, Zhejiang Province',
+    website: 'http://www.nbu.edu.cn',
+    features: ['Economic hub', 'International environment', 'English programs']
+  },
+  {
+    name: 'Wenzhou Medical University',
+    location: 'Wenzhou, Zhejiang Province',
+    website: 'http://www.wmu.edu.cn',
+    features: ['Medical specialty university', 'Strong reputation', 'Clinical excellence']
+  },
+  {
+    name: 'Hebei North University',
+    location: 'Zhangjiakou, Hebei Province',
+    website: 'http://www.hebeinu.edu.cn',
+    features: ['Near Beijing', 'Winter sports city', 'Affordable tuition']
+  },
+  {
+    name: 'Southeast University',
+    location: 'Nanjing, Jiangsu Province',
+    website: 'http://www.seu.edu.cn',
+    features: ['Historic city', 'Top-tier university', 'Research opportunities']
+  },
+  {
+    name: 'Nantong University',
+    location: 'Nantong, Jiangsu Province',
+    website: 'http://www.ntu.edu.cn',
+    features: ['Near Shanghai', 'Quality medical education', 'Modern facilities']
+  },
+  {
+    name: 'Qingdao University',
+    location: 'Qingdao, Shandong Province',
+    website: 'http://www.qdu.edu.cn',
+    features: ['Beautiful coastal city', 'International program', 'Advanced facilities']
+  },
+  {
+    name: 'Tianjin Medical University',
+    location: 'Tianjin',
+    website: 'http://www.tmu.edu.cn',
+    features: ['Near Beijing', 'Prestigious university', 'Top medical programs']
+  }
+]
+
 const faqs = [
   {
     question: 'Is MBBS from China recognized in Pakistan and other countries?',
@@ -529,7 +670,7 @@ const faqs = [
   },
   {
     question: 'When does the academic session start?',
-    answer: 'The main intake is in September every year. Application deadlines are usually in June-July. We recommend starting the application process 6 months before the intended start date to allow time for all procedures.'
+    answer: 'Chinese medical universities have TWO intakes per year: September (main intake) and March (spring intake). September intake deadlines are in June-July, while March intake deadlines are in November-December. We recommend starting the application process 4-6 months before your intended start date to allow time for all procedures including visa processing.'
   },
   {
     question: 'What happens after I graduate?',

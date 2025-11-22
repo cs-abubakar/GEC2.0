@@ -6,7 +6,7 @@
 
     <div class="container-custom relative z-10">
       <!-- Section Header -->
-      <div class="text-center mb-16 scroll-reveal">
+      <div class="text-center mb-12 scroll-reveal">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-purple/10 text-brand-purple font-semibold mb-4">
           <span class="text-xl">🎓</span>
           <span>Academic Excellence</span>
@@ -19,10 +19,28 @@
         </p>
       </div>
 
+      <!-- Program Level Tabs -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12 scroll-reveal animation-delay-100">
+        <button
+          v-for="level in programLevels"
+          :key="level.id"
+          @click="activeLevel = level.id"
+          :class="[
+            'px-6 py-3 rounded-full font-semibold transition-all duration-300',
+            activeLevel === level.id
+              ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg scale-105'
+              : 'bg-white text-slate-700 hover:bg-slate-50 shadow-md hover:shadow-lg'
+          ]"
+        >
+          <span class="mr-2">{{ level.icon }}</span>
+          {{ level.name }}
+        </button>
+      </div>
+
       <!-- Programs Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Program Card 1: MBBS (Highlighted) -->
-        <div class="group relative col-span-1 md:col-span-2 lg:col-span-2 card card-hover p-8 scroll-reveal overflow-hidden">
+        <!-- MBBS Highlighted Card (Only for Undergraduate) -->
+        <div v-if="activeLevel === 'undergraduate'" class="group relative col-span-1 md:col-span-2 lg:col-span-2 card card-hover p-8 scroll-reveal overflow-hidden">
           <!-- Decorative Background -->
           <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-brand-blue/10 to-brand-teal/10 rounded-full blur-3xl"></div>
 
@@ -103,9 +121,9 @@
           </div>
         </div>
 
-        <!-- Program Cards 2-8 -->
+        <!-- Other Program Cards -->
         <div
-          v-for="(program, index) in otherPrograms"
+          v-for="(program, index) in filteredPrograms"
           :key="program.slug"
           class="group card card-hover p-6 flex flex-col relative overflow-hidden scroll-reveal"
           :class="`animate-fade-in animation-delay-${Math.min(index + 1, 5) * 100}`"
@@ -163,101 +181,288 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue'
+
 // Use scroll reveal composable for animations
 useScrollReveal()
 
-const otherPrograms = [
-  {
-    title: 'Language Programs',
-    slug: 'language',
-    icon: '📚',
-    duration: '6-12 Months',
-    features: [
-      'HSK 3, 4, 6 Preparation',
-      'Qualified Foreign Teachers',
-      'Mock Exams & Cultural Activities',
-      '6 Months or 1 Year Options'
-    ]
-  },
-  {
-    title: 'International Economy & Trade',
-    slug: 'economy-trade',
-    icon: '💼',
-    duration: '4 Years',
-    features: [
-      'Global Business Focus',
-      'Internship Opportunities',
-      'English-Taught Programs',
-      'Career-Ready Curriculum'
-    ],
-    price: ''
-  },
-  {
-    title: 'International Relations',
-    slug: 'international-relations',
-    icon: '🌐',
-    duration: '4 Years',
-    features: [
-      'Diplomatic Career Preparation',
-      'Multilingual Environment',
-      'Policy & Governance Focus',
-      'Global Networking'
-    ],
-    price: ''
-  },
-  {
-    title: 'Computer Science',
-    slug: 'computer-science',
-    icon: '💻',
-    badge: 'High Demand',
-    duration: '4 Years',
-    features: [
-      'AI/ML Specialization',
-      'Industry-Led Projects',
-      'Top-Ranked Universities',
-      '95% Job Placement'
-    ],
-    price: ''
-  },
-  {
-    title: 'BDS (Bachelor of Dental Surgery)',
-    slug: 'bds',
-    icon: '🦷',
-    duration: '5 Years',
-    features: [
-      'Modern Facilities',
-      'Clinical Training',
-      'International Recognition',
-      'Affordable Fees'
-    ],
-    price: ''
-  },
-  {
-    title: 'Nursing',
-    slug: 'nursing',
-    icon: '👩‍⚕️',
-    duration: '4 Years',
-    features: [
-      'Practical Clinical Training',
-      'International Nursing Standards',
-      'High Demand Globally',
-      'English Programs Available'
-    ],
-    price: ''
-  },
-  {
-    title: 'Artificial Intelligence',
-    slug: 'ai',
-    icon: '🤖',
-    badge: 'Emerging Field',
-    duration: '4 Years',
-    features: [
-      'Cutting-Edge Curriculum',
-      'Research Opportunities',
-      'Industry Partnerships',
-      'Future-Proof Career'
-    ],
-    price: ''
-  }
+// Active program level
+const activeLevel = ref('undergraduate')
+
+// Program level tabs
+const programLevels = [
+  { id: 'undergraduate', name: 'Undergraduate', icon: '🎓' },
+  { id: 'masters', name: "Master's", icon: '📚' },
+  { id: 'phd', name: 'PhD', icon: '🔬' },
+  { id: 'short-courses', name: 'Short Courses', icon: '⚡' }
 ]
+
+// All programs organized by level
+const allPrograms = {
+  undergraduate: [
+    {
+      title: 'BDS (Bachelor of Dental Surgery)',
+      slug: 'bds',
+      icon: '🦷',
+      duration: '5 Years',
+      level: 'undergraduate',
+      features: [
+        'Modern Facilities',
+        'Clinical Training',
+        'International Recognition',
+        'Affordable Fees'
+      ]
+    },
+    {
+      title: 'Computer Science',
+      slug: 'computer-science',
+      icon: '💻',
+      badge: 'High Demand',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'AI/ML Specialization',
+        'Industry-Led Projects',
+        'Top-Ranked Universities',
+        '95% Job Placement'
+      ]
+    },
+    {
+      title: 'International Economy & Trade',
+      slug: 'economy-trade',
+      icon: '💼',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'Global Business Focus',
+        'Internship Opportunities',
+        'English-Taught Programs',
+        'Career-Ready Curriculum'
+      ]
+    },
+    {
+      title: 'International Relations',
+      slug: 'international-relations',
+      icon: '🌐',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'Diplomatic Career Preparation',
+        'Multilingual Environment',
+        'Policy & Governance Focus',
+        'Global Networking'
+      ]
+    },
+    {
+      title: 'Nursing',
+      slug: 'nursing',
+      icon: '👩‍⚕️',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'Practical Clinical Training',
+        'International Nursing Standards',
+        'High Demand Globally',
+        'English Programs Available'
+      ]
+    },
+    {
+      title: 'Artificial Intelligence',
+      slug: 'ai',
+      icon: '🤖',
+      badge: 'Emerging Field',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'Cutting-Edge Curriculum',
+        'Research Opportunities',
+        'Industry Partnerships',
+        'Future-Proof Career'
+      ]
+    },
+    {
+      title: 'Engineering',
+      slug: 'engineering',
+      icon: '⚙️',
+      duration: '4 Years',
+      level: 'undergraduate',
+      features: [
+        'Multiple Specializations',
+        'State-of-the-Art Labs',
+        'Industry Partnerships',
+        'Global Career Opportunities'
+      ]
+    }
+  ],
+  masters: [
+    {
+      title: 'Master of Business Administration',
+      slug: 'mba',
+      icon: '💼',
+      badge: 'Popular',
+      duration: '2 Years',
+      level: 'masters',
+      features: [
+        'Global Business Perspective',
+        'Leadership Development',
+        'Networking Opportunities',
+        'English-Taught Programs'
+      ]
+    },
+    {
+      title: 'Master in Computer Science',
+      slug: 'masters-cs',
+      icon: '💻',
+      duration: '2-3 Years',
+      level: 'masters',
+      features: [
+        'Advanced AI & ML',
+        'Research-Focused',
+        'Industry Collaboration',
+        'Scholarship Opportunities'
+      ]
+    },
+    {
+      title: 'Master in Engineering',
+      slug: 'masters-engineering',
+      icon: '⚙️',
+      duration: '2-3 Years',
+      level: 'masters',
+      features: [
+        'Various Specializations',
+        'Research Projects',
+        'Industry Experience',
+        'CSC Scholarships Available'
+      ]
+    },
+    {
+      title: 'Master in International Relations',
+      slug: 'masters-ir',
+      icon: '🌐',
+      duration: '2 Years',
+      level: 'masters',
+      features: [
+        'Global Policy Focus',
+        'Diplomatic Training',
+        'Multilingual Environment',
+        'Career in International Organizations'
+      ]
+    }
+  ],
+  phd: [
+    {
+      title: 'PhD in Computer Science',
+      slug: 'phd-cs',
+      icon: '💻',
+      duration: '3-4 Years',
+      level: 'phd',
+      features: [
+        'Advanced Research',
+        'Full Scholarships Available',
+        'Publication Opportunities',
+        'Academic Career Path'
+      ]
+    },
+    {
+      title: 'PhD in Engineering',
+      slug: 'phd-engineering',
+      icon: '⚙️',
+      duration: '3-4 Years',
+      level: 'phd',
+      features: [
+        'Research Excellence',
+        'CSC Scholarships',
+        'State-of-the-Art Facilities',
+        'International Collaboration'
+      ]
+    },
+    {
+      title: 'PhD in Medicine',
+      slug: 'phd-medicine',
+      icon: '🩺',
+      badge: 'Research',
+      duration: '3-5 Years',
+      level: 'phd',
+      features: [
+        'Medical Research',
+        'Clinical Studies',
+        'Full Funding Available',
+        'International Recognition'
+      ]
+    },
+    {
+      title: 'PhD in Business Administration',
+      slug: 'phd-business',
+      icon: '💼',
+      duration: '3-4 Years',
+      level: 'phd',
+      features: [
+        'Business Research',
+        'Academic Career',
+        'Scholarship Opportunities',
+        'Global Network'
+      ]
+    }
+  ],
+  'short-courses': [
+    {
+      title: 'Chinese Language (1 Year)',
+      slug: 'language-1year',
+      icon: '📚',
+      badge: 'Popular',
+      duration: '1 Year',
+      level: 'short-courses',
+      features: [
+        'HSK 3, 4, 6 Preparation',
+        'Qualified Foreign Teachers',
+        'Mock Exams & Cultural Activities',
+        'Scholarship Opportunities'
+      ]
+    },
+    {
+      title: 'Chinese Language (6 Months)',
+      slug: 'language-6months',
+      icon: '📚',
+      duration: '6 Months',
+      level: 'short-courses',
+      features: [
+        'Intensive Language Training',
+        'HSK Exam Preparation',
+        'Cultural Immersion',
+        'Fast-Track Learning'
+      ]
+    },
+    {
+      title: 'Business Chinese',
+      slug: 'business-chinese',
+      icon: '💼',
+      duration: '3-6 Months',
+      level: 'short-courses',
+      features: [
+        'Business Communication',
+        'Professional Vocabulary',
+        'Networking Skills',
+        'Certificate Program'
+      ]
+    },
+    {
+      title: 'Summer Programs',
+      slug: 'summer-programs',
+      icon: '☀️',
+      duration: '2-8 Weeks',
+      level: 'short-courses',
+      features: [
+        'Cultural Exchange',
+        'Language & Culture',
+        'City Tours & Activities',
+        'Certificate of Completion'
+      ]
+    }
+  ]
+}
+
+// Computed property to filter programs based on active level
+const filteredPrograms = computed(() => {
+  return allPrograms[activeLevel.value] || []
+})
 </script>

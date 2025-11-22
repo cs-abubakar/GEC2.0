@@ -1,4 +1,8 @@
 <template>
+  <!-- News Ticker -->
+  <NewsTicker />
+
+  <!-- Main Header -->
   <header
     :class="[
       'sticky top-0 z-50 transition-all duration-300 bg-white border-b border-slate-100',
@@ -156,12 +160,6 @@
             <span>Blog</span>
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-blue to-brand-purple group-hover:w-full transition-all duration-300"></span>
           </NuxtLink>
-          <NuxtLink to="/contact" class="btn-primary px-6 py-2.5 text-base font-semibold">
-            Apply Now
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </NuxtLink>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -278,13 +276,6 @@
           </div>
 
           <NuxtLink to="/blog" class="mobile-link" @click="mobileMenuOpen = false">📝 Blog</NuxtLink>
-
-          <NuxtLink to="/contact" class="btn-primary w-full mt-4 justify-center px-6 py-3 text-base font-semibold" @click="mobileMenuOpen = false">
-            Apply Now
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </NuxtLink>
         </div>
       </div>
     </nav>

@@ -10,36 +10,48 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Brand Colors - Modern & Fresh
-        brand: {
-          ocean: '#0F172A',
-          blue: '#3B82F6',
-          'blue-light': '#60A5FA',
-          orange: '#F97316',
-          coral: '#FB923C',
-          amber: '#FBBF24',
-          teal: '#14B8A6',
-          emerald: '#10B981',
-          purple: '#8B5CF6',
-        },
-        // Keep legacy colors for backward compatibility during transition
+        // New Professional Color Palette
         primary: {
-          blue: '#3B82F6',
-          green: '#14B8A6',
+          DEFAULT: '#1E3A5F',     // Deep Navy
+          light: '#2B4C7E',       // Lighter navy
+          dark: '#152D47',        // Darker navy
+        },
+        secondary: {
+          DEFAULT: '#0891B2',     // Teal/Cyan
+          light: '#06B6D4',       // Lighter teal
+          dark: '#0E7490',        // Darker teal
         },
         accent: {
-          yellow: '#FBBF24',
+          DEFAULT: '#F59E0B',     // Amber/Gold
+          hover: '#D97706',       // Darker amber for hover
+          light: '#FCD34D',       // Lighter amber
+        },
+        success: '#10B981',       // Green
+        background: '#F8FAFC',    // Light gray-white
+        surface: '#FFFFFF',       // White
+        text: {
+          primary: '#1E293B',     // Dark slate
+          secondary: '#64748B',   // Medium gray
+          light: '#FFFFFF',       // White text
+          muted: '#94A3B8',       // Muted gray
+        },
+        border: {
+          DEFAULT: '#E2E8F0',     // Light border
+          dark: '#CBD5E1',        // Darker border
+        },
+
+        // Keep brand colors for legacy compatibility
+        brand: {
+          ocean: '#1E3A5F',       // Now matches primary
+          blue: '#0891B2',        // Now matches secondary
+          'blue-light': '#06B6D4',
           orange: '#F97316',
-          purple: '#8B5CF6',
+          coral: '#FB923C',
+          amber: '#F59E0B',       // Now matches accent
           teal: '#14B8A6',
+          emerald: '#10B981',     // Now matches success
+          purple: '#8B5CF6',
         },
-        // Neutrals
-        light: {
-          grey: '#F8FAFC',
-        },
-        dark: {
-          grey: '#F1F5F9',
-        }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

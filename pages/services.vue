@@ -12,7 +12,7 @@
           </p>
           <div class="flex flex-wrap gap-6 justify-center">
             <div class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl">
-              <div class="text-3xl font-bold text-accent-yellow">500+</div>
+              <div class="text-3xl font-bold text-accent-yellow">5000+</div>
               <div class="text-sm">Students Helped</div>
             </div>
             <div class="bg-white/10 backdrop-blur-sm px-8 py-4 rounded-xl">
@@ -236,6 +236,215 @@
       </div>
     </section>
 
+    <!-- Test Preparation Services -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-blue/10 text-primary-blue font-semibold mb-4">
+            <span class="text-xl">📝</span>
+            <span>Test Preparation</span>
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4 font-display">Test Preparation Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Excel in your HSK exams and achieve academic excellence with our comprehensive preparation programs
+          </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
+          <!-- HSK Preparation -->
+          <div class="bg-gradient-to-br from-primary-blue/10 to-primary-green/10 p-8 rounded-2xl border-2 border-primary-blue/20">
+            <div class="w-16 h-16 bg-primary-blue rounded-2xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🎓</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-primary-blue">HSK Preparation (Level 3, 4 & 6)</h3>
+            <p class="text-gray-700 mb-6">
+              Master the Chinese language with our structured HSK preparation courses. Essential for clinical rotations and daily life in China.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Qualified Foreign Teachers</strong>
+                  <p class="text-sm text-gray-600">Expert instructors with years of HSK teaching experience</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Structured Curriculum</strong>
+                  <p class="text-sm text-gray-600">Step-by-step progression from HSK 3 to HSK 6</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Listening & Speaking Focus</strong>
+                  <p class="text-sm text-gray-600">Practical language skills for hospital communication</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Study Materials Included</strong>
+                  <p class="text-sm text-gray-600">Textbooks, workbooks, and online resources provided</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mock & Practice Tests -->
+          <div class="bg-gradient-to-br from-primary-green/10 to-accent-yellow/10 p-8 rounded-2xl border-2 border-primary-green/20">
+            <div class="w-16 h-16 bg-primary-green rounded-2xl flex items-center justify-center mb-6">
+              <span class="text-3xl">📊</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-primary-green">Mock & Practice Tests</h3>
+            <p class="text-gray-700 mb-6">
+              Build confidence and identify areas for improvement with our comprehensive testing program.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Weekly Mock Exams</strong>
+                  <p class="text-sm text-gray-600">Regular testing to track your progress</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Real Exam Format</strong>
+                  <p class="text-sm text-gray-600">Practice tests mirroring actual HSK exam structure</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Detailed Performance Analysis</strong>
+                  <p class="text-sm text-gray-600">Identify strengths and weaknesses for targeted improvement</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-primary-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Time Management Training</strong>
+                  <p class="text-sm text-gray-600">Learn to complete exams efficiently under pressure</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Achievement & Student Activities -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <!-- Achievement & Motivation -->
+          <div class="bg-gradient-to-br from-accent-yellow/20 to-accent-peach/20 p-8 rounded-2xl">
+            <div class="w-16 h-16 bg-accent-yellow/80 rounded-2xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🏆</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-primary-blue">Achievement & Motivation Programs</h3>
+            <p class="text-gray-700 mb-6">
+              We celebrate your success and motivate you to reach new heights throughout your academic journey.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🥇</span>
+                <div>
+                  <strong class="text-gray-900">Excellence Awards</strong>
+                  <p class="text-sm text-gray-600">Recognition and rewards for top-performing students each semester</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🎯</span>
+                <div>
+                  <strong class="text-gray-900">Goal Setting Workshops</strong>
+                  <p class="text-sm text-gray-600">Set and achieve academic and personal milestones</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">📈</span>
+                <div>
+                  <strong class="text-gray-900">Progress Tracking</strong>
+                  <p class="text-sm text-gray-600">Regular feedback and performance reviews</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">💪</span>
+                <div>
+                  <strong class="text-gray-900">Peer Motivation Groups</strong>
+                  <p class="text-sm text-gray-600">Study groups and accountability partners</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Student Activities -->
+          <div class="bg-gradient-to-br from-accent-purple/20 to-primary-blue/20 p-8 rounded-2xl">
+            <div class="w-16 h-16 bg-accent-purple/70 rounded-2xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🎉</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-primary-green">Student Activities & Cultural Programs</h3>
+            <p class="text-gray-700 mb-6">
+              Learning goes beyond the classroom. Participate in enriching activities that enhance your Chinese language skills and cultural understanding.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🏮</span>
+                <div>
+                  <strong class="text-gray-900">Cultural Excursions</strong>
+                  <p class="text-sm text-gray-600">Visit historical sites, museums, and cultural landmarks</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🗣️</span>
+                <div>
+                  <strong class="text-gray-900">Language Exchange Events</strong>
+                  <p class="text-sm text-gray-600">Practice Chinese with native speakers in real-world settings</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🎭</span>
+                <div>
+                  <strong class="text-gray-900">Cultural Workshops</strong>
+                  <p class="text-sm text-gray-600">Calligraphy, traditional arts, Chinese cooking classes</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-2xl">🤝</span>
+                <div>
+                  <strong class="text-gray-900">Community Service</strong>
+                  <p class="text-sm text-gray-600">Give back to local communities while improving language skills</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <div class="bg-primary-blue/5 border-l-4 border-primary-blue p-6 rounded-lg inline-block max-w-3xl">
+            <p class="text-gray-700">
+              <strong class="text-primary-blue">Important:</strong> HSK 4 proficiency is required before starting clinical rotations in Year 3. Our comprehensive preparation program ensures you achieve this milestone on time while enjoying your learning journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Ongoing Support -->
     <section class="py-20 bg-gradient-to-r from-primary-blue to-primary-green text-white">
       <div class="container mx-auto px-4">
@@ -429,7 +638,7 @@
               <ul class="space-y-3">
                 <li class="flex items-start">
                   <span class="text-accent-yellow mr-2 text-xl">✓</span>
-                  <span><strong>500+ students</strong> successfully placed in Chinese universities</span>
+                  <span><strong>5000+ students</strong> successfully placed in Chinese universities</span>
                 </li>
                 <li class="flex items-start">
                   <span class="text-accent-yellow mr-2 text-xl">✓</span>
@@ -475,8 +684,8 @@
           <NuxtLink to="/contact" class="bg-accent-yellow text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-all">
             Get Started Now
           </NuxtLink>
-          <a href="https://wa.me/8618672301888" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all">
-            WhatsApp: +86 186 7230 1888
+          <a href="https://wa.me/923114999954" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all">
+            WhatsApp: +92 311 4999954
           </a>
         </div>
         <p class="mt-6 text-gray-200">

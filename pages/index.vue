@@ -1,7 +1,10 @@
 <template>
   <div>
-    <!-- Hero Section -->
-    <HeroSection />
+    <!-- Hero Slider -->
+    <HeroSlider />
+
+    <!-- About Us Section -->
+    <AboutUsSection />
 
     <!-- Trust Stats Bar -->
     <TrustStats />
@@ -42,7 +45,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Study in China with GEC. Expert education consultancy with 500+ successful students, 95% visa success rate. MBBS, Engineering, Business programs available.'
+      content: 'Study in China with GEC. Expert education consultancy with 5000+ successful students, 95% visa success rate. MBBS, Engineering, Business programs available.'
     },
     {
       name: 'keywords',
@@ -54,7 +57,7 @@ useHead({
     },
     {
       property: 'og:description',
-      content: 'Expert guidance from professional team. 500+ successful students. 95% visa success rate. With offices in different countries, based in China.'
+      content: 'Expert guidance from professional team. 5000+ successful students. 95% visa success rate. With offices in different countries, based in China.'
     },
     {
       property: 'og:type',
