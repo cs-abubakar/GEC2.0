@@ -681,10 +681,10 @@
           Let our team of 50+ experts guide you every step of the way. Your success is our success.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-          <NuxtLink to="/contact" class="bg-accent-yellow text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-all">
+          <NuxtLink to="/contact" class="bg-accent-yellow text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-lg">
             Get Started Now
           </NuxtLink>
-          <a href="https://wa.me/923114999954" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all">
+          <a href="https://wa.me/923114999954" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all hover:scale-105">
             WhatsApp: +92 311 4999954
           </a>
         </div>
